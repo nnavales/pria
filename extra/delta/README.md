@@ -1,2 +1,2 @@
 # Delta
-Paradise theme for delta git diff viewer.
+Pria theme for delta git diff viewer.

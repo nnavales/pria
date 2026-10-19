@@ -2,7 +2,7 @@ local M = {}
 
 M.url = "https://github.com/hrsh7th/nvim-cmp"
 
----@type paradise.HighlightsFn
+---@type pria.HighlightsFn
 function M.get(c, opts)
 	local ret = {
 		CmpDocumentation = { fg = c.fg, bg = c.surface },
@@ -14,7 +14,7 @@ function M.get(c, opts)
 		CmpItemMenu = { fg = c.muted, bg = c.none },
 	}
 
-	require("paradise.groups.kinds").kinds(ret, "CmpItemKind%s")
+	require("pria.groups.kinds").kinds(ret, "CmpItemKind%s")
 	return ret
 end
 

@@ -1,4 +1,4 @@
 # Starship
-Paradise theme for Starship prompt.
+Pria theme for Starship prompt.
 
-Add the contents of `paradise.toml` into to your existing starship config.
+Add the contents of `pria.toml` into to your existing starship config.

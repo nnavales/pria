@@ -1,8 +1,8 @@
 local M = {}
 
----@param opts? paradise.Config
+---@param opts? pria.Config
 function M.setup(opts)
-	opts = require("paradise.config").extend(opts)
+	opts = require("pria.config").extend(opts)
     -- stylua: ignore
 	---@class Palette
 	local palette = {
@@ -33,7 +33,7 @@ function M.setup(opts)
 		highlight_high = "#33383D",
 	}
 
-	---@class paradise.ColorScheme: Palette
+	---@class pria.ColorScheme: Palette
 	local colors = vim.deepcopy(palette)
 
 	colors.none = "NONE"

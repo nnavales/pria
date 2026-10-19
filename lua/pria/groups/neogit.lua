@@ -2,7 +2,7 @@ local M = {}
 
 M.url = "https://github.com/NeogitOrg/neogit"
 
----@type paradise.HighlightsFn
+---@type pria.HighlightsFn
 function M.get(c, opts)
 	return {
 		NeogitBranch = { fg = c.git.delete, bold = true },

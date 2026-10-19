@@ -1,10 +1,10 @@
 local M = {}
 
----@param opts? paradise.Config
+---@param opts? pria.Config
 function M.setup(opts)
-	opts = require("paradise.config").extend(opts)
-	local colors = require("paradise.colors").setup(opts)
-	local groups = require("paradise.groups").setup(colors, opts)
+	opts = require("pria.config").extend(opts)
+	local colors = require("pria.colors").setup(opts)
+	local groups = require("pria.groups").setup(colors, opts)
 
 	vim.cmd("highlight clear")
 
@@ -13,7 +13,7 @@ function M.setup(opts)
 	end
 
 	vim.o.termguicolors = true
-	vim.g.colors_name = "paradise"
+	vim.g.colors_name = "pria"
 
 	for group, hl in pairs(groups) do
 		hl = type(hl) == "string" and { link = hl } or hl
@@ -25,7 +25,7 @@ function M.setup(opts)
 	end
 end
 
----@param colors paradise.ColorScheme
+---@param colors pria.ColorScheme
 function M.terminal(colors)
 	vim.g.terminal_color_0 = colors.terminal.black
 	vim.g.terminal_color_8 = colors.terminal.bright_black

@@ -5,7 +5,7 @@ if exists('syntax_on')
     syntax reset
 endif
 
-let g:colors_name='paradise'
+let g:colors_name='pria'
 set t_Co=256
 
 " Palette ─────────────────────────────────────────────────────

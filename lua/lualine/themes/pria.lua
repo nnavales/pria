@@ -1,6 +1,6 @@
-local colors = require("paradise.colors").setup()
+local colors = require("pria.colors").setup()
 
-local paradise = {
+local pria = {
 	normal = {
 		a = { fg = colors.bg, bg = colors.cyan, gui = "bold" },
 		b = { fg = colors.fg, bg = colors.surface },
@@ -38,4 +38,4 @@ local paradise = {
 	},
 }
 
-return paradise
+return pria

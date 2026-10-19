@@ -77,7 +77,7 @@ local plugins = {
 			require("lualine").setup({
 				options = {
 					icons_enabled = true,
-					theme = "paradise_transparent",
+					theme = "pria_transparent",
 					section_separators = { left = "", right = "" },
 					component_separators = { left = "", right = "" },
 					globalstatus = true,
@@ -628,14 +628,14 @@ local plugins = {
 	{ "folke/lazy.nvim", version = false },
 }
 
-local theme = require("paradise")
+local theme = require("pria")
 theme.load()
 
 require("lazy.minit").setup({ spec = plugins })
 
 vim.api.nvim_create_user_command("ReloadTheme", function()
 	for k in pairs(package.loaded) do
-		if k:find("^paradise") then
+		if k:find("^pria") then
 			package.loaded[k] = nil
 		end
 	end

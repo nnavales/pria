@@ -2,7 +2,7 @@ local M = {}
 
 M.url = "https://github.com/folke/flash.nvim"
 
----@type paradise.HighlightsFn
+---@type pria.HighlightsFn
 function M.get(c, opts)
 	return {
 		FlashBackdrop = { fg = c.dim },

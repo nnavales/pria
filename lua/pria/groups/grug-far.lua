@@ -2,7 +2,7 @@ local M = {}
 
 M.url = "https://github.com/MagicDuck/grug-far.nvim"
 
----@type paradise.HighlightsFn
+---@type pria.HighlightsFn
 function M.get(c, opts)
 	return {
 		GrugFarHelpHeader = { fg = c.muted },

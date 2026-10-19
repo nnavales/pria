@@ -1,5 +1,5 @@
 # Bat
-Paradise theme for bat.
+Pria theme for bat.
 
 1. Create a theme folder in bat's by running:
    ```bash
@@ -10,7 +10,7 @@ Paradise theme for bat.
 
 3.  Edit your configuration file, located at `bat --config-file` (usually `~/.config/bat/config`):
     ```
-    --theme="paradise"
+    --theme="pria"
     ```
 
 4. Rebuild bat's cache:

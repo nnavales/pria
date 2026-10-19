@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
   <key>name</key>
-  <string>paradise</string>
+  <string>pria</string>
   <key>settings</key>
   <array>
     <dict>
@@ -284,9 +284,9 @@
   <key>colorSpaceName</key>
   <string>sRGB</string>
   <key>semanticClass</key>
-  <string>theme.dark.paradise</string>
+  <string>theme.dark.pria</string>
   <key>author</key>
-  <string>paradise</string>
+  <string>pria</string>
   <key>comment</key>
   <string>A minimalist dark theme</string>
   <key>uuid</key>

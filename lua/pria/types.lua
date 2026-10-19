@@ -1,4 +1,4 @@
----@class paradise.Palette
+---@class pria.Palette
 ---@field blue string
 ---@field green string
 ---@field violet string
@@ -19,24 +19,24 @@
 ---@field highlight_med string
 ---@field highlight_high string
 
----@class paradise.GitColors
+---@class pria.GitColors
 ---@field add string
 ---@field delete string
 ---@field change string
 
----@class paradise.DiffColors
+---@class pria.DiffColors
 ---@field add string
 ---@field change string
 ---@field delete string
 ---@field text string
 
----@class paradise.DiagnosticColors
+---@class pria.DiagnosticColors
 ---@field error string
 ---@field warning string
 ---@field info string
 ---@field hint string
 
----@class paradise.TerminalColors
+---@class pria.TerminalColors
 ---@field black string
 ---@field red string
 ---@field green string
@@ -54,7 +54,7 @@
 ---@field bright_cyan string
 ---@field bright_white string
 
----@class paradise.ColorScheme: paradise.Palette
+---@class pria.ColorScheme: pria.Palette
 ---@field none string
 ---@field success string
 ---@field error string
@@ -67,16 +67,16 @@
 ---@field substitute string
 ---@field match string
 ---@field title string
----@field git paradise.GitColors
----@field diff paradise.DiffColors
----@field diagnostic_fg paradise.DiagnosticColors
----@field diagnostic_bg paradise.DiagnosticColors
----@field terminal? paradise.TerminalColors
+---@field git pria.GitColors
+---@field diff pria.DiffColors
+---@field diagnostic_fg pria.DiagnosticColors
+---@field diagnostic_bg pria.DiagnosticColors
+---@field terminal? pria.TerminalColors
 
----@class paradise.Highlight: vim.api.keyset.highlight
+---@class pria.Highlight: vim.api.keyset.highlight
 ---@field style? vim.api.keyset.highlight
 
----@alias paradise.Highlights table<string, paradise.Highlight|string>
----@alias paradise.HighlightsFn fun(colors: paradise.ColorScheme, opts:paradise.Config):paradise.Highlights
+---@alias pria.Highlights table<string, pria.Highlight|string>
+---@alias pria.HighlightsFn fun(colors: pria.ColorScheme, opts:pria.Config):pria.Highlights
 
 return {}

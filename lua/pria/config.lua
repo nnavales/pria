@@ -1,6 +1,6 @@
 local M = {}
 
----@class paradise.Config
+---@class pria.Config
 ---@field transparent boolean
 ---@field dim boolean
 ---@field borders boolean
@@ -25,15 +25,15 @@ M.defaults = {
 	plugins = {}, -- plugin highlight overrides (e.g., telescope = false to disable)
 }
 
----@type paradise.Config
+---@type pria.Config
 M.options = vim.tbl_deep_extend("force", {}, M.defaults)
 
----@param options? paradise.Config
+---@param options? pria.Config
 function M.setup(options)
 	M.options = vim.tbl_deep_extend("force", {}, M.defaults, options or {})
 end
 
----@param opts? paradise.Config
+---@param opts? pria.Config
 function M.extend(opts)
 	return opts and vim.tbl_deep_extend("force", {}, M.options, opts) or M.options
 end

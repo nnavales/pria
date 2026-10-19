@@ -12,8 +12,8 @@ function M.mod(modname)
 	return ret
 end
 
----@param groups paradise.Highlights
----@return paradise.Highlights
+---@param groups pria.Highlights
+---@return pria.Highlights
 function M.resolve(groups)
 	for _, hl in pairs(groups) do
 		if type(hl.style) == "table" then

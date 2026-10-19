@@ -2,7 +2,7 @@ local M = {}
 
 M.url = "https://github.com/dmtrKovalenko/fff.nvim"
 
----@type paradise.HighlightsFn
+---@type pria.HighlightsFn
 function M.get(c, opts)
 	return {
 		-- window chrome

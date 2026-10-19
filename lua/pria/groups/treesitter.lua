@@ -1,6 +1,6 @@
 local M = {}
 
----@type paradise.HighlightsFn
+---@type pria.HighlightsFn
 function M.get(c, opts)
 	return {
 		["@comment"] = "Comment",

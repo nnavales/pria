@@ -1,8 +1,8 @@
 # Yazi
-Paradise theme for Yazi file manager.
+Pria theme for Yazi file manager.
 
 ```bash
-cp paradise.toml ~/.config/yazi/theme.toml
+cp pria.toml ~/.config/yazi/theme.toml
 ```
 
 Or add colors to your existing yazi config.

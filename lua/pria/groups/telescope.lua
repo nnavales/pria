@@ -2,7 +2,7 @@ local M = {}
 
 M.url = "https://github.com/nvim-telescope/telescope.nvim"
 
----@type paradise.HighlightsFn
+---@type pria.HighlightsFn
 function M.get(c, opts)
 	return {
 		TelescopeNormal = { fg = c.fg, bg = c.surface },

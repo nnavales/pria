@@ -1,4 +1,4 @@
-local Util = require("paradise.util")
+local Util = require("pria.util")
 
 local M = {}
 
@@ -15,19 +15,19 @@ M.plugins = {
 }
 
 function M.get_group(name)
-	---@type {get: paradise.HighlightsFn, url: string}
-	return Util.mod("paradise.groups." .. name)
+	---@type {get: pria.HighlightsFn, url: string}
+	return Util.mod("pria.groups." .. name)
 end
 
----@param colors paradise.ColorScheme
----@param opts paradise.Config
+---@param colors pria.ColorScheme
+---@param opts pria.Config
 function M.get(name, colors, opts)
 	local mod = M.get_group(name)
 	return mod.get(colors, opts)
 end
 
----@param colors paradise.ColorScheme
----@param opts paradise.Config
+---@param colors pria.ColorScheme
+---@param opts pria.Config
 function M.setup(colors, opts)
 	local groups = {
 		base = true,

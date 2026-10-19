@@ -2,7 +2,7 @@ local M = {}
 
 M.url = "https://github.com/echasnovski/mini.icons"
 
----@type paradise.HighlightsFn
+---@type pria.HighlightsFn
 function M.get(c, opts)
 	return {
 		MiniIconsGrey = { fg = c.dim },
