@@ -68,25 +68,35 @@ function M.setup(opts)
 		change = colors.cyan,
 	}
 
+	-- Faint color washes: an accent mixed over the background.
+	local wash = function(color, amount)
+		return util.mix(colors.bg, color, amount)
+	end
+
 	colors.diff = {
-		add = "#1D2F21",
-		change = "#1E282F",
-		delete = "#2F1D20",
-		text = "#2B4050",
+		add = wash(colors.green, 0.12),
+		change = wash(colors.cyan, 0.12),
+		delete = wash(colors.red, 0.12),
+		text = wash(colors.cyan, 0.28),
 	}
 
-	-- inline diagnostics render as chips: muted fg (calm annotation) on a faint color-tinted bg
+	-- Inline diagnostics render as chips: a calm, desaturated accent for the
+	-- text on a faint color-tinted background.
+	local function annotation(accent)
+		return util.desaturate(util.mix(colors.fg, accent, 0.5), 0.35)
+	end
+
 	colors.diagnostic_fg = {
-		error = "#C37A8B",
-		warning = "#C1B77C",
-		info = "#64A2D0",
-		hint = "#91C1CB",
+		error = annotation(colors.red),
+		warning = annotation(colors.yellow),
+		info = annotation(colors.blue),
+		hint = annotation(colors.cyan),
 	}
 	colors.diagnostic_bg = {
-		error = "#39272C",
-		warning = "#393529",
-		info = "#23303C",
-		hint = "#2D383B",
+		error = wash(colors.red, 0.18),
+		warning = wash(colors.yellow, 0.18),
+		info = wash(colors.blue, 0.18),
+		hint = wash(colors.cyan, 0.18),
 	}
 
 	if opts.terminal_colors then
