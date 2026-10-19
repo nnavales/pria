@@ -32,9 +32,9 @@ local pria = {
 		c = { fg = colors.dim, bg = colors.bg },
 	},
 	inactive = {
-		a = { fg = colors.muted, bg = colors.bg_dim },
-		b = { fg = colors.muted, bg = colors.bg_dim },
-		c = { fg = colors.muted, bg = colors.bg_dim },
+		a = { fg = colors.muted, bg = colors.bg2 },
+		b = { fg = colors.muted, bg = colors.bg2 },
+		c = { fg = colors.muted, bg = colors.bg2 },
 	},
 }
 

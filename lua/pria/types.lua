@@ -12,9 +12,8 @@
 ---@field fg string
 ---@field dim string
 ---@field bg string
----@field bg_dim string
----@field surface string
----@field overlay string
+---@field bg2 string
+---@field border string
 ---@field highlight_low string
 ---@field selection string
 

@@ -35,8 +35,8 @@ function M.get(c, opts)
 		NeogitDiffContext = { fg = c.dim },
 		NeogitDiffContextHighlight = { bg = c.highlight_low, fg = c.fg },
 
-		NeogitHunkHeader = { bg = c.surface, fg = c.dim },
-		NeogitHunkHeaderHighlight = { bg = c.surface, fg = c.cyan, bold = true },
+		NeogitHunkHeader = { bg = c.bg2, fg = c.dim },
+		NeogitHunkHeaderHighlight = { bg = c.bg2, fg = c.cyan, bold = true },
 		NeogitHunkHeaderCursor = { bg = c.selection, fg = c.cyan, bold = true },
 
 		NeogitStaged = { fg = c.git.add, bold = true },
@@ -89,9 +89,9 @@ function M.get(c, opts)
 		NeogitGraphBoldCyan = { fg = c.cyan, bold = true },
 		NeogitGraphBoldWhite = { fg = c.fg, bold = true },
 
-		NeogitFloatHeader = { bg = c.surface, fg = c.fg, bold = true },
-		NeogitFloatHeaderHighlight = { bg = c.surface, fg = c.cyan, bold = true },
-		NeogitFloatFooter = { bg = c.surface, fg = c.dim },
+		NeogitFloatHeader = { bg = c.bg2, fg = c.fg, bold = true },
+		NeogitFloatHeaderHighlight = { bg = c.bg2, fg = c.cyan, bold = true },
+		NeogitFloatFooter = { bg = c.bg2, fg = c.dim },
 		NeogitCommitSelectAction = { fg = c.orange, bold = true },
 		NeogitCommitViewDescription = { fg = c.dim, italic = true },
 		NeogitRebaseDone = { fg = c.muted },

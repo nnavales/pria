@@ -5,9 +5,9 @@ M.url = "https://github.com/nvim-telescope/telescope.nvim"
 ---@type pria.HighlightsFn
 function M.get(c, opts)
 	return {
-		TelescopeNormal = { fg = c.fg, bg = c.surface },
-		TelescopePromptNormal = { fg = c.fg, bg = c.surface },
-		TelescopeResultsNormal = { fg = c.subtle, bg = c.surface },
+		TelescopeNormal = { fg = c.fg, bg = c.bg2 },
+		TelescopePromptNormal = { fg = c.fg, bg = c.bg2 },
+		TelescopeResultsNormal = { fg = c.subtle, bg = c.bg2 },
 
 		TelescopeSelection = { fg = c.fg, bg = c.selection },
 		TelescopeResultsComment = { fg = c.muted },
@@ -15,15 +15,15 @@ function M.get(c, opts)
 		TelescopeMatching = { fg = c.match },
 		TelescopeResultsIdentifier = { fg = c.fg },
 
-		TelescopePromptBorder = { fg = opts.borders and c.overlay or c.surface, bg = c.surface },
-		TelescopeBorder = { fg = opts.borders and c.overlay or c.surface, bg = c.surface },
-		TelescopeResultsBorder = { fg = opts.borders and c.overlay or c.surface, bg = c.surface },
-		TelescopePreviewBorder = { fg = opts.borders and c.overlay or c.surface, bg = c.surface },
+		TelescopePromptBorder = { fg = opts.borders and c.border or c.bg2, bg = c.bg2 },
+		TelescopeBorder = { fg = opts.borders and c.border or c.bg2, bg = c.bg2 },
+		TelescopeResultsBorder = { fg = opts.borders and c.border or c.bg2, bg = c.bg2 },
+		TelescopePreviewBorder = { fg = opts.borders and c.border or c.bg2, bg = c.bg2 },
 
 		TelescopeTitle = { fg = c.title, bold = true },
-		TelescopePromptTitle = { fg = c.title, bg = c.overlay },
-		TelescopeResultsTitle = { fg = c.title, bg = c.overlay },
-		TelescopePreviewTitle = { fg = c.title, bg = c.overlay },
+		TelescopePromptTitle = { fg = c.title, bg = c.border },
+		TelescopeResultsTitle = { fg = c.title, bg = c.border },
+		TelescopePreviewTitle = { fg = c.title, bg = c.border },
 	}
 end
 

@@ -5,7 +5,7 @@ M.url = "https://github.com/hrsh7th/nvim-cmp"
 ---@type pria.HighlightsFn
 function M.get(c, opts)
 	local ret = {
-		CmpDocumentation = { fg = c.fg, bg = c.surface },
+		CmpDocumentation = { fg = c.fg, bg = c.bg2 },
 		CmpGhostText = { fg = c.muted },
 		CmpItemAbbr = { fg = c.subtle, bg = c.none },
 		CmpItemAbbrDeprecated = { fg = c.muted, bg = c.none, strikethrough = true },

@@ -24,10 +24,9 @@ function M.setup(opts)
 		dim      = "#4B5B63", -- line numbers, nontext, disabled
 
 		-- backgrounds (dark → light)
-		bg_dim  = "#131416", -- inactive windows, sidebars
-		bg      = "#181A1C", -- main background
-		surface = "#1E2124", -- floats, statusline, popups
-		overlay = "#282B2F", -- borders, raised elements
+		bg     = "#181A1C", -- main background
+		bg2    = "#1E2124", -- floats, popups, statusline, sidebars
+		border = "#282B2F", -- borders, separators, raised elements
 
 		-- highlight wash
 		highlight_low = "#1B1F23",
