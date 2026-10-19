@@ -1,5 +1,7 @@
 local M = {}
 
+local util = require("pria.util")
+
 ---@param opts? pria.Config
 function M.setup(opts)
 	opts = require("pria.config").extend(opts)
@@ -88,7 +90,7 @@ function M.setup(opts)
 	}
 
 	if opts.terminal_colors then
-		colors.terminal = {
+		local terminal = {
 			black = colors.bg,
 			red = colors.red,
 			green = colors.green,
@@ -97,16 +99,25 @@ function M.setup(opts)
 			magenta = colors.blue,
 			cyan = colors.teal,
 			white = colors.fg,
-
-			bright_black = colors.highlight_high,
-			bright_red = "#EDABB6",
-			bright_green = "#98D6A7",
-			bright_yellow = "#F0C79F",
-			bright_blue = "#D5EAEF",
-			bright_magenta = "#9CC7EC",
-			bright_cyan = "#9BDED0",
-			bright_white = "#F3F6F6",
 		}
+
+		-- Brights are the light variants of their base color.
+		-- ANSI "yellow" (slot 3) maps to `orange`, so bright_yellow follows it.
+		local bright = 0.08
+		for name, base in pairs({
+			black = terminal.black,
+			red = terminal.red,
+			green = terminal.green,
+			yellow = terminal.orange,
+			blue = terminal.blue,
+			magenta = terminal.magenta,
+			cyan = terminal.cyan,
+			white = terminal.white,
+		}) do
+			terminal["bright_" .. name] = util.lighten(base, bright)
+		end
+
+		colors.terminal = terminal
 	end
 
 	return colors
