@@ -10,13 +10,13 @@ function M.setup(opts)
 	local palette = {
 		violet  =       "#B895DE", -- decorators, rare things  
 		blue =          "#5AA6E6", -- keywords  
-		green  =        "#5FC878", -- strings   
-		orange =        "#ECA25C", -- numbers, bools, nulls  
-		yellow =        "#E4C56B", -- UI only: warnings, search/match  
-		teal =          "#5FD3BB", -- functions, methods  
-		cyan =          "#A1DEEA", -- types, builtin-types
+		green  =        "#6AC770", -- strings   
+		orange =        "#EFA061", -- numbers, bools, nulls  
+		yellow =        "#D7CB6E", -- UI only: warnings, search/match  
+		teal =          "#5BD3C0", -- functions, methods  
+		cyan =          "#92E1F0", -- types, builtin-types
 		red =           "#E66B80", -- errors
-		attribute =     "#B8D3D5", -- attributes & members (cool-grey, distinct from fg)
+		silver  =       "#B8D3D5", -- members/attributes (cool pale tone, distinct from fg)
 
 		fg  = "#DCE5E5", -- main text
 		fg2 = "#789AA1", -- secondary text
@@ -24,7 +24,7 @@ function M.setup(opts)
 		bg     = "#181A1C", -- main background
 		bg2    = "#1E2124", -- secondary background
 		border = "#282B2F", -- borders, separators, raised elements
-		current = "#1B1F23", -- current/active context surface (CursorLine, active rows)
+		current = "#1B1F23", -- current/active context surface
 	}
 
 	---@class pria.ColorScheme: Palette

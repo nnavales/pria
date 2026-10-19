@@ -7,7 +7,7 @@
 ---@field cyan string
 ---@field teal string
 ---@field red string
----@field attribute string
+---@field silver string
 ---@field fg2 string
 ---@field fg string
 ---@field bg string

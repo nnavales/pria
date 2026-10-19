@@ -65,15 +65,15 @@ function M.get(c, opts)
 		["@type.builtin"] = "@type",
 		["@type.definition"] = "@type",
 
-		["@property"] = { fg = c.attribute },
+		["@property"] = { fg = c.silver },
 
 		["@tag"] = { fg = c.cyan },
 		["@tag.builtin"] = "@tag",
-		["@tag.attribute"] = { fg = c.attribute },
+		["@tag.attribute"] = { fg = c.silver },
 		["@tag.delimiter"] = "Delimiter",
 
 		["@variable"] = { fg = c.fg },
-		["@variable.member"] = { fg = c.attribute },
+		["@variable.member"] = { fg = c.silver },
 		["@variable.parameter"] = "@variable",
 		["@variable.parameter.builtin"] = "@variable",
 		["@variable.builtin"] = { fg = c.fg, style = opts.styles.builtins },
@@ -180,7 +180,7 @@ function M.get(c, opts)
 
 		["@variable.parameter.tsx"] = "@variable.parameter",
 
-		htmlArg = { fg = c.attribute },
+		htmlArg = { fg = c.silver },
 		htmlBold = { bold = true },
 		htmlEndTag = { fg = c.fg2 },
 		htmlH1 = "Title",
@@ -193,7 +193,7 @@ function M.get(c, opts)
 		htmlTag = { fg = c.fg2 },
 		htmlTagN = { fg = c.fg },
 		htmlTagName = { fg = c.cyan },
-		tsxAttrib = { fg = c.attribute },
+		tsxAttrib = { fg = c.silver },
 	}
 end
 
