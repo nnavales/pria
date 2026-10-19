@@ -15,15 +15,15 @@ function M.get(c, opts)
 		TelescopeMatching = { fg = c.match },
 		TelescopeResultsIdentifier = { fg = c.fg },
 
-		TelescopePromptBorder = { fg = opts.borders and c.border or c.bg2, bg = c.bg2 },
-		TelescopeBorder = { fg = opts.borders and c.border or c.bg2, bg = c.bg2 },
-		TelescopeResultsBorder = { fg = opts.borders and c.border or c.bg2, bg = c.bg2 },
-		TelescopePreviewBorder = { fg = opts.borders and c.border or c.bg2, bg = c.bg2 },
+		TelescopePromptBorder = { fg = opts.borders and c.bg3 or c.bg2, bg = c.bg2 },
+		TelescopeBorder = { fg = opts.borders and c.bg3 or c.bg2, bg = c.bg2 },
+		TelescopeResultsBorder = { fg = opts.borders and c.bg3 or c.bg2, bg = c.bg2 },
+		TelescopePreviewBorder = { fg = opts.borders and c.bg3 or c.bg2, bg = c.bg2 },
 
 		TelescopeTitle = { fg = c.title, bold = true },
-		TelescopePromptTitle = { fg = c.title, bg = c.border },
-		TelescopeResultsTitle = { fg = c.title, bg = c.border },
-		TelescopePreviewTitle = { fg = c.title, bg = c.border },
+		TelescopePromptTitle = { fg = c.title, bg = c.bg3 },
+		TelescopeResultsTitle = { fg = c.title, bg = c.bg3 },
+		TelescopePreviewTitle = { fg = c.title, bg = c.bg3 },
 	}
 end
 

@@ -6,7 +6,7 @@ M.url = "https://github.com/dmtrKovalenko/fff.nvim"
 function M.get(c, opts)
 	return {
 		-- window chrome
-		FFFBorder = { fg = opts.borders and c.border or c.bg2, bg = c.bg2 },
+		FFFBorder = { fg = opts.borders and c.bg3 or c.bg2, bg = c.bg2 },
 		FFFNormal = { fg = c.fg, bg = c.bg2 },
 		FFFPrompt = { fg = c.fg, bg = c.bg2 },
 		FFFTitle = { fg = c.title, bold = true },

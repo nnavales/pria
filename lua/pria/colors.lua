@@ -8,6 +8,13 @@ function M.setup(opts)
     -- stylua: ignore
 	---@class Palette
 	local palette = {
+		bg  = "#212527", -- main background
+		bg2 = "#1C1F21", -- secondary background (recessed: floats, popups)
+		bg3 = "#2A2F32", -- raised surface + separator lines (cursorline, borders, titles)
+
+		fg  = "#DAD7D0", -- main text
+		fg2 = "#789AA1", -- secondary text
+
 		violet  =       "#B895DE", -- decorators, rare things  
 		blue =          "#5AA6E6", -- keywords  
 		green  =        "#6AC770", -- strings   
@@ -17,14 +24,6 @@ function M.setup(opts)
 		cyan =          "#92E1F0", -- types, builtin-types
 		red =           "#E66B80", -- errors
 		silver  =       "#B8D3D5", -- members/attributes (cool pale tone, distinct from fg)
-
-		fg  = "#DCE5E5", -- main text
-		fg2 = "#789AA1", -- secondary text
-
-		bg     = "#181A1C", -- main background
-		bg2    = "#1E2124", -- secondary background
-		border = "#282B2F", -- borders, separators, raised elements
-		current = "#1B1F23", -- current/active context surface
 	}
 
 	---@class pria.ColorScheme: Palette

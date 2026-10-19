@@ -57,9 +57,9 @@ function M.get(c, opts)
 		Cursor = { bg = c.fg, fg = c.bg },
 		lCursor = { bg = c.fg, fg = c.bg },
 		CursorIM = { bg = c.fg, fg = c.bg },
-		CursorLine = { bg = c.current },
-		CursorColumn = { bg = c.current },
-		ColorColumn = { bg = c.current },
+		CursorLine = { bg = c.bg3 },
+		CursorColumn = { bg = c.bg3 },
+		ColorColumn = { bg = c.bg3 },
 
 		LineNr = { fg = c.faint },
 		LineNrAbove = { fg = c.faint },
@@ -71,16 +71,16 @@ function M.get(c, opts)
 		Folded = { fg = c.blue },
 		FoldColumn = { fg = c.faint, bg = opts.transparent and c.none or c.bg },
 
-		VertSplit = { fg = opts.borders and c.border or c.bg },
-		WinSeparator = { fg = opts.borders and c.border or c.bg },
+		VertSplit = { fg = opts.borders and c.bg3 or c.bg },
+		WinSeparator = { fg = opts.borders and c.bg3 or c.bg },
 
 		NormalFloat = { fg = c.fg, bg = c.bg2 },
-		FloatBorder = { fg = opts.borders and c.border or c.bg2, bg = c.bg2 },
-		FloatTitle = { fg = c.cyan, bg = c.border },
+		FloatBorder = { fg = opts.borders and c.bg3 or c.bg2, bg = c.bg2 },
+		FloatTitle = { fg = c.cyan, bg = c.bg3 },
 
 		Pmenu = { bg = c.bg2, fg = c.fg2 },
 		PmenuSel = { bg = c.selection },
-		PmenuSbar = { bg = c.border },
+		PmenuSbar = { bg = c.bg3 },
 		PmenuThumb = { bg = c.fg2 },
 		PmenuMatch = { bg = c.bg2, fg = c.fg },
 		PmenuMatchSel = { bg = c.selection, fg = c.fg },
@@ -147,7 +147,7 @@ function M.get(c, opts)
 		LspSignatureActiveParameter = { bg = c.selection, bold = true },
 		LspCodeLens = { fg = c.fg2 },
 		LspInlayHint = { bg = c.bg2, fg = c.comment },
-		LspInfoBorder = { fg = opts.borders and c.border or c.bg2, bg = c.bg2 },
+		LspInfoBorder = { fg = opts.borders and c.bg3 or c.bg2, bg = c.bg2 },
 
 		SpellBad = { sp = c.error, undercurl = true },
 		SpellCap = { sp = c.warning, undercurl = true },
@@ -170,7 +170,7 @@ function M.get(c, opts)
 		helpExample = { fg = c.fg2 },
 		helpCommand = { fg = c.green },
 		ComplHint = { fg = c.fg2 },
-		debugPC = { bg = c.border },
+		debugPC = { bg = c.bg3 },
 		debugBreakpoint = { fg = c.error },
 
 		RedrawDebugClear = { fg = c.bg, bg = c.orange },
