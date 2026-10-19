@@ -13,7 +13,7 @@ function M.setup(opts)
 		bg3 = "#2A2F32", -- raised surface + separator lines (cursorline, borders, titles)
 
 		fg  = "#D1D1D1", -- main text
-		fg2 = "#939393", -- secondary text
+		fg2 = "#8C92AC", -- secondary text (periwinkle, seeds comment/faint)
 
 		violet  =       "#B895DE", -- decorators, rare things  
 		blue =          "#5AA6E6", -- keywords  
