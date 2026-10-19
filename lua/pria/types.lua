@@ -16,7 +16,6 @@
 ---@field surface string
 ---@field overlay string
 ---@field highlight_low string
----@field highlight_med string
 ---@field highlight_high string
 
 ---@class pria.GitColors

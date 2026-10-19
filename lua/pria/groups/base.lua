@@ -146,7 +146,7 @@ function M.get(c, opts)
 		LspReferenceWrite = { bg = c.highlight_high },
 		LspSignatureActiveParameter = { bg = c.highlight_high, bold = true },
 		LspCodeLens = { fg = c.muted },
-		LspInlayHint = { bg = c.highlight_med, fg = c.comment },
+		LspInlayHint = { bg = c.surface, fg = c.comment },
 		LspInfoBorder = { fg = opts.borders and c.overlay or c.surface, bg = c.surface },
 
 		SpellBad = { sp = c.error, undercurl = true },
@@ -156,7 +156,7 @@ function M.get(c, opts)
 
 		qfFileName = { fg = c.cyan },
 		qfLineNr = { fg = c.dim },
-		QuickFixLine = { bg = c.highlight_med, bold = true },
+		QuickFixLine = { bg = c.surface, bold = true },
 
 		Directory = { fg = c.cyan },
 		Underlined = { underline = true },

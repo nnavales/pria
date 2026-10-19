@@ -43,11 +43,11 @@ function M.get(c, opts)
 		SnacksNotifierBorder = { fg = opts.borders and c.overlay or c.surface, bg = c.surface },
 		SnacksNotifierTitle = { fg = c.title, bg = c.overlay, bold = true },
 
-		SnacksProfilerIconInfo = { bg = c.highlight_med, fg = c.cyan },
+		SnacksProfilerIconInfo = { bg = c.surface, fg = c.cyan },
 		SnacksProfilerBadgeInfo = { bg = c.highlight_low, fg = c.cyan },
 		SnacksFooterKey = "SnacksProfilerIconInfo",
 		SnacksFooterDesc = "SnacksProfilerBadgeInfo",
-		SnacksProfilerIconTrace = { bg = c.highlight_med, fg = c.dim },
+		SnacksProfilerIconTrace = { bg = c.surface, fg = c.dim },
 		SnacksProfilerBadgeTrace = { bg = c.highlight_low, fg = c.dim },
 
 		SnacksIndent = { fg = c.muted, nocombine = true },
@@ -65,7 +65,7 @@ function M.get(c, opts)
 		SnacksPickerSelected = { fg = c.fg, bg = c.highlight_high, bold = true },
 		SnacksPickerToggle = { bg = c.highlight_low, fg = c.cyan },
 		SnacksPickerPickWinCurrent = { fg = c.fg, bg = c.blue, bold = true },
-		SnacksPickerPickWin = { fg = c.fg, bg = c.highlight_med, bold = true },
+		SnacksPickerPickWin = { fg = c.fg, bg = c.surface, bold = true },
 
 		SnacksGhLabel = { fg = c.cyan, bold = true },
 		SnacksGhDiffHeader = { bg = c.highlight_low, fg = c.cyan },

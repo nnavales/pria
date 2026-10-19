@@ -31,7 +31,6 @@ function M.setup(opts)
 
 		-- highlight washes (low → high)
 		highlight_low  = "#1B1F23",
-		highlight_med  = "#1F2428",
 		highlight_high = "#33383D",
 	}
 
