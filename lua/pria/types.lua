@@ -14,7 +14,6 @@
 ---@field bg2 string
 ---@field border string
 ---@field focus string
----@field selection string
 
 ---@class pria.GitColors
 ---@field add string
@@ -60,6 +59,7 @@
 ---@field hint string
 ---@field comment string
 ---@field faint string
+---@field selection string
 ---@field search string
 ---@field search_bg string
 ---@field substitute string

@@ -19,17 +19,12 @@ function M.setup(opts)
 		attribute =     "#B8D3D5", -- attributes & members (cool-grey, distinct from fg)
 
 		fg  = "#DCE5E5", -- main text
-		fg2 = "#789AA1", -- operators, punctuation, secondary UI text
+		fg2 = "#789AA1", -- secondary text
 
 		bg     = "#181A1C", -- main background
-		bg2    = "#1E2124", -- floats, popups, statusline, sidebars
+		bg2    = "#1E2124", -- secondary background
 		border = "#282B2F", -- borders, separators, raised elements
-
-		-- focus wash: subtle background behind the cursor and active context
-		focus = "#1B1F23",
-
-		-- unified selection (violet-slate): Visual, menu/picker selection, LSP refs
-		selection = "#2F2735",
+		focus = "#1B1F23", -- background behind hovered/active context
 	}
 
 	---@class pria.ColorScheme: Palette
@@ -45,6 +40,9 @@ function M.setup(opts)
 	local wash = function(color, amount)
 		return util.mix(colors.bg, color, amount)
 	end
+
+	-- unified selection (violet): Visual, menu/picker selection, LSP refs
+	colors.selection = wash(colors.violet, 0.15)
 
 	colors.success = colors.green
 	colors.error = colors.red
