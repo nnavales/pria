@@ -16,15 +16,15 @@ function M.get(c, opts)
 		FFFMatch = { fg = c.search, bold = true },
 
 		-- secondary / metadata text
-		FFFDir = { fg = c.subtle },
-		FFFDebug = { fg = c.subtle },
+		FFFDir = { fg = c.muted },
+		FFFDebug = { fg = c.muted },
 		FFFFrecency = { fg = c.orange },
 		FFFComboHeader = { fg = c.orange },
 
 		-- grep results
 		FFFGrepLineNumber = { fg = c.dim },
 		FFFGrepRegexActive = { fg = c.info },
-		FFFGrepPlainActive = { fg = c.subtle },
+		FFFGrepPlainActive = { fg = c.muted },
 		FFFGrepFuzzyActive = { fg = c.hint },
 
 		-- git status

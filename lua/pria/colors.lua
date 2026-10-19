@@ -30,7 +30,6 @@ function M.setup(opts)
 
 		-- focus wash: subtle background behind the cursor and active context
 		focus = "#1B1F23",
-
 		-- unified selection (violet-slate): Visual, menu/picker selection, LSP refs
 		selection = "#2F2735",
 	}
@@ -42,9 +41,6 @@ function M.setup(opts)
 
 	-- comments: dimmer than muted (punctuation/operators) so they read as a separate layer
 	colors.comment = "#607C85"
-
-	-- neutral secondary UI text (completion candidates, picker results) — flatter than muted
-	colors.subtle = "#5C6870"
 
 	colors.success = colors.green
 	colors.error = colors.red

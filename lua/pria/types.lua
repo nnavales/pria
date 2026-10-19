@@ -59,7 +59,6 @@
 ---@field warning string
 ---@field info string
 ---@field hint string
----@field subtle string
 ---@field search string
 ---@field search_bg string
 ---@field substitute string

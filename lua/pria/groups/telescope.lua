@@ -7,7 +7,7 @@ function M.get(c, opts)
 	return {
 		TelescopeNormal = { fg = c.fg, bg = c.bg2 },
 		TelescopePromptNormal = { fg = c.fg, bg = c.bg2 },
-		TelescopeResultsNormal = { fg = c.subtle, bg = c.bg2 },
+		TelescopeResultsNormal = { fg = c.muted, bg = c.bg2 },
 
 		TelescopeSelection = { fg = c.fg, bg = c.selection },
 		TelescopeResultsComment = { fg = c.muted },
