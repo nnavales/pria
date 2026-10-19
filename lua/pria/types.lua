@@ -13,7 +13,7 @@
 ---@field bg string
 ---@field bg2 string
 ---@field border string
----@field focus string
+---@field current string
 
 ---@class pria.GitColors
 ---@field add string

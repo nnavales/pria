@@ -57,9 +57,9 @@ function M.get(c, opts)
 		Cursor = { bg = c.fg, fg = c.bg },
 		lCursor = { bg = c.fg, fg = c.bg },
 		CursorIM = { bg = c.fg, fg = c.bg },
-		CursorLine = { bg = c.focus },
-		CursorColumn = { bg = c.focus },
-		ColorColumn = { bg = c.focus },
+		CursorLine = { bg = c.current },
+		CursorColumn = { bg = c.current },
+		ColorColumn = { bg = c.current },
 
 		LineNr = { fg = c.faint },
 		LineNrAbove = { fg = c.faint },

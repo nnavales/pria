@@ -33,7 +33,7 @@ function M.get(c, opts)
 		NeogitChangeCopied = { fg = c.teal },
 
 		NeogitDiffContext = { fg = c.faint },
-		NeogitDiffContextHighlight = { bg = c.focus, fg = c.fg },
+		NeogitDiffContextHighlight = { bg = c.current, fg = c.fg },
 
 		NeogitHunkHeader = { bg = c.bg2, fg = c.faint },
 		NeogitHunkHeaderHighlight = { bg = c.bg2, fg = c.cyan, bold = true },

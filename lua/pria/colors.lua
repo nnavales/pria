@@ -24,7 +24,7 @@ function M.setup(opts)
 		bg     = "#181A1C", -- main background
 		bg2    = "#1E2124", -- secondary background
 		border = "#282B2F", -- borders, separators, raised elements
-		focus = "#1B1F23", -- background behind hovered/active context
+		current = "#1B1F23", -- current/active context surface (CursorLine, active rows)
 	}
 
 	---@class pria.ColorScheme: Palette
