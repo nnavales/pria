@@ -32,8 +32,8 @@ function M.setup(opts)
 	colors.none = "NONE"
 
 	-- the secondary text tones derive from fg2 so they stay in key with it
-	colors.comment = util.darken(colors.fg2, 0.09) -- comments, dimmer than operators
-	colors.faint = util.mix(colors.fg2, colors.bg, 0.45) -- line numbers, nontext, disabled
+	colors.comment = util.mix(colors.fg2, colors.bg, 0.15) -- comments, dimmer than operators
+	colors.faint = util.mix(colors.fg2, colors.bg, 0.62) -- line numbers, nontext, disabled
 
 	-- Faint color washes: an accent mixed over the background.
 	local wash = function(color, amount)
