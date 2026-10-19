@@ -12,8 +12,8 @@ function M.setup(opts)
 		bg2 = "#1C1F21", -- secondary background (recessed: floats, popups)
 		bg3 = "#2A2F32", -- raised surface + separator lines (cursorline, borders, titles)
 
-		fg  = "#DAD7D0", -- main text
-		fg2 = "#789AA1", -- secondary text
+		fg  = "#CECECE", -- main text
+		fg2 = "#939393", -- secondary text
 
 		violet  =       "#B895DE", -- decorators, rare things  
 		blue =          "#5AA6E6", -- keywords  
