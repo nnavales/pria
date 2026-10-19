@@ -1,0 +1,5 @@
+.tests/
+.opencode/
+.tests/langs/*
+AGENTS.md
+*.vsix

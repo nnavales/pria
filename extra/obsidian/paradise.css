@@ -1,0 +1,210 @@
+.theme-dark {
+    --h1-color: #5AA6E6;
+    --h1-weight: 600;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-font: inherit;
+
+    --h2-color: #A1DEEA;
+    --h2-weight: 600;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-font: inherit;
+
+    --h3-color: #5FD3BB;
+    --h3-weight: 600;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-font: inherit;
+
+    --h4-color: #5FC878;
+    --h4-weight: 600;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-font: inherit;
+
+    --h5-color: #B895DE;
+    --h5-weight: 600;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-font: inherit;
+
+    --h6-color: #ECA25C;
+    --h6-weight: 600;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-font: inherit;
+
+    --bg1: #181A1C;
+    --bg2: #1E2124;
+    --bg3: #33383D;
+
+    --ui1: #282B2F;
+    --ui2: #282B2F;
+    --ui3: #282B2F;
+
+    --base-h: 200;
+    --base-s: 8%;
+    --base-l: 10%;
+
+    --accent-h: 182;
+    --accent-s: 56%;
+    --accent-l: 75%;
+
+    --ax3: #DCE5E5;
+    --ax2: #DCE5E5;
+    --ax1: #DCE5E5;
+    --sp1: #181A1C;
+
+    --red: #E66B80;
+    --orange: #ECA25C;
+    --yellow: #E4C56B;
+    --green: #5FC878;
+    --cyan: #A1DEEA;
+    --blue: #5AA6E6;
+    --purple: #B895DE;
+    --pink: #B895DE;
+
+    --tx1: #DCE5E5;
+    --tx2: #5C6870;
+    --tx3: #4B5B63;
+
+    --hl1: #33383D;
+    --hl2: #33383D;
+
+    --bold-color: #DCE5E5;
+    --bold-modifier: 300;
+    --italic-color: #DCE5E5;
+
+    --active-line-bg: #1B1F23;
+
+    --link-color: #A1DEEA;
+    --link-color-hover: #A1DEEA;
+    --link-external-color: #A1DEEA;
+    --link-external-color-hover: #A1DEEA;
+    --link-unresolved-color: #4B5B63;
+    --link-unresolved-decoration-color: #4B5B63;
+
+    --code-background: #131416;
+    --code-normal: #DCE5E5;
+    --code-font-size: 0.9em;
+
+    --code-comment: #607C85;
+    --code-function: #5FD3BB;
+    --code-keyword: #5AA6E6;
+    --code-important: #E66B80;
+    --code-operator: #789AA1;
+    --code-property: #DCE5E5;
+    --code-punctuation: #789AA1;
+    --code-string: #5FC878;
+    --code-tag: #B895DE;
+    --code-value: #ECA25C;
+
+    --blockquote-color: #DCE5E5;
+    --blockquote-background-color: #131416;
+    --blockquote-border-color: #4B5B63;
+    --blockquote-border-thickness: 3px;
+    --blockquote-size: inherit;
+    --blockquote-font-style: normal;
+
+    --list-marker-color: #789AA1;
+    --list-spacing: 0.1em;
+    --checkbox-color: #789AA1;
+
+    --table-font-size: inherit;
+    --row-color-hover: #1B1F23;
+
+    --tag-radius: 4px;
+
+    --embed-background: #131416;
+    --embed-decoration-color: #4B5B63;
+    --embed-decoration-style: solid;
+
+    --indentation-guide-color: #33383D;
+    --indentation-guide-color-active: #789AA1;
+    --ig-adjust-reading: 0px;
+    --ig-adjust-edit: 0px;
+
+    --metadata-label-width: 9em;
+
+    --header-height: 40px;
+    --minimal-tab-text-color: #5C6870;
+    --minimal-tab-text-color-active: #DCE5E5;
+    --tab-stacked-pane-width: 700px;
+    --tab-stacked-header-width: 40px;
+
+    --file-header-font-size: 0.9em;
+    --file-header-font-weight: 500;
+    --file-header-justify: left;
+    --title-color: #DCE5E5;
+    --title-color-inactive: #5C6870;
+    --inline-title-font: inherit;
+    --inline-title-size: 2em;
+    --inline-title-weight: 600;
+    --inline-title-color: #DCE5E5;
+
+    --progress-completed: #5FC878;
+    --callout-blend-mode: normal;
+    --mobile-left-sidebar-width: 280pt;
+    --mobile-right-sidebar-width: 280pt;
+    --cursor: default;
+    --font-smaller: 0.9em;
+    --font-smallest: 0.8em;
+    --spacing-p: 1em;
+
+    --frame-background: #131416;
+    --frame-icon-color: #5C6870;
+    --titlebar-text-color: #5C6870;
+    --titlebar-text-color-focused: #DCE5E5;
+    --titlebar-text-weight: 500;
+
+    --max-col-width: 100%;
+}
+
+.theme-dark .callout[data-callout="info"] {
+    --callout-color: 161, 222, 234;
+}
+
+.theme-dark .callout[data-callout="todo"] {
+    --callout-color: 184, 149, 222;
+}
+
+.theme-dark .callout[data-callout="tip"] {
+    --callout-color: 95, 200, 120;
+}
+
+.theme-dark .callout[data-callout="success"] {
+    --callout-color: 95, 200, 120;
+}
+
+.theme-dark .callout[data-callout="question"] {
+    --callout-color: 228, 197, 107;
+}
+
+.theme-dark .callout[data-callout="warning"] {
+    --callout-color: 228, 197, 107;
+}
+
+.theme-dark .callout[data-callout="danger"] {
+    --callout-color: 230, 107, 128;
+}
+
+.theme-dark .callout[data-callout="error"] {
+    --callout-color: 230, 107, 128;
+}
+
+.theme-dark .callout[data-callout="bug"] {
+    --callout-color: 230, 107, 128;
+}
+
+.theme-dark .callout[data-callout="example"] {
+    --callout-color: 184, 149, 222;
+}
+
+.theme-dark .callout[data-callout="quote"] {
+    --callout-color: 95, 211, 187;
+}
+
+.theme-dark .callout[data-callout="note"] {
+    --callout-color: 184, 149, 222;
+}
