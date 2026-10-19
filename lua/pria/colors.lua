@@ -29,9 +29,8 @@ function M.setup(opts)
 		surface = "#1E2124", -- floats, statusline, popups
 		overlay = "#282B2F", -- borders, raised elements
 
-		-- highlight washes (low → high)
-		highlight_low  = "#1B1F23",
-		highlight_high = "#33383D",
+		-- highlight wash
+		highlight_low = "#1B1F23",
 	}
 
 	---@class pria.ColorScheme: Palette
@@ -39,8 +38,8 @@ function M.setup(opts)
 
 	colors.none = "NONE"
 
-	-- tinted visual selection (blue-slate, H207) — distinct from neutral menu selection
-	colors.visual = "#2F2735"
+	-- unified selection (violet-slate): Visual, menu/picker selection, LSP refs
+	colors.selection = "#2F2735"
 
 	-- comments: dimmer than muted (punctuation/operators) so they read as a separate layer
 	colors.comment = "#607C85"

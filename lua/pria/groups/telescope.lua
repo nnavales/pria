@@ -9,7 +9,7 @@ function M.get(c, opts)
 		TelescopePromptNormal = { fg = c.fg, bg = c.surface },
 		TelescopeResultsNormal = { fg = c.subtle, bg = c.surface },
 
-		TelescopeSelection = { fg = c.fg, bg = c.highlight_high },
+		TelescopeSelection = { fg = c.fg, bg = c.selection },
 		TelescopeResultsComment = { fg = c.muted },
 
 		TelescopeMatching = { fg = c.match },

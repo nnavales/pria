@@ -79,11 +79,11 @@ function M.get(c, opts)
 		FloatTitle = { fg = c.cyan, bg = c.overlay },
 
 		Pmenu = { bg = c.surface, fg = c.muted },
-		PmenuSel = { bg = c.highlight_high },
+		PmenuSel = { bg = c.selection },
 		PmenuSbar = { bg = c.overlay },
 		PmenuThumb = { bg = c.muted },
 		PmenuMatch = { bg = c.surface, fg = c.fg },
-		PmenuMatchSel = { bg = c.highlight_high, fg = c.fg },
+		PmenuMatchSel = { bg = c.selection, fg = c.fg },
 		WildMenu = { bg = c.surface, fg = c.muted },
 
 		StatusLine = { fg = c.fg, bg = c.surface },
@@ -102,8 +102,8 @@ function M.get(c, opts)
 		Substitute = { bg = c.substitute, fg = c.bg },
 		MatchParen = { fg = c.yellow },
 
-		Visual = { bg = c.visual },
-		VisualNOS = { bg = c.visual },
+		Visual = { bg = c.selection },
+		VisualNOS = { bg = c.selection },
 
 		DiffAdd = { bg = c.diff.add },
 		DiffChange = { bg = c.diff.change },
@@ -141,10 +141,10 @@ function M.get(c, opts)
 		DiagnosticUnderlineInfo = { undercurl = true, sp = c.info },
 		DiagnosticUnderlineHint = { undercurl = true, sp = c.hint },
 
-		LspReferenceText = { bg = c.highlight_high },
-		LspReferenceRead = { bg = c.highlight_high },
-		LspReferenceWrite = { bg = c.highlight_high },
-		LspSignatureActiveParameter = { bg = c.highlight_high, bold = true },
+		LspReferenceText = { bg = c.selection },
+		LspReferenceRead = { bg = c.selection },
+		LspReferenceWrite = { bg = c.selection },
+		LspSignatureActiveParameter = { bg = c.selection, bold = true },
 		LspCodeLens = { fg = c.muted },
 		LspInlayHint = { bg = c.surface, fg = c.comment },
 		LspInfoBorder = { fg = opts.borders and c.overlay or c.surface, bg = c.surface },
@@ -184,9 +184,9 @@ function M.get(c, opts)
 		Changed = { fg = c.git.change },
 		Removed = { fg = c.git.delete },
 		PmenuExtra = { fg = c.muted, bg = c.surface },
-		PmenuExtraSel = { fg = c.muted, bg = c.highlight_high },
+		PmenuExtraSel = { fg = c.muted, bg = c.selection },
 		PmenuKind = { fg = c.cyan, bg = c.surface },
-		PmenuKindSel = { fg = c.cyan, bg = c.highlight_high },
+		PmenuKindSel = { fg = c.cyan, bg = c.selection },
 	}
 end
 

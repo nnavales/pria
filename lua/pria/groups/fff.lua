@@ -10,7 +10,7 @@ function M.get(c, opts)
 		FFFNormal = { fg = c.fg, bg = c.surface },
 		FFFPrompt = { fg = c.fg, bg = c.surface },
 		FFFTitle = { fg = c.title, bold = true },
-		FFFCursor = { bg = c.highlight_high },
+		FFFCursor = { bg = c.selection },
 
 		-- matched query characters: search color, fg only (no bg block)
 		FFFMatch = { fg = c.search, bold = true },

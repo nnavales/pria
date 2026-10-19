@@ -37,7 +37,7 @@ function M.get(c, opts)
 
 		NeogitHunkHeader = { bg = c.surface, fg = c.dim },
 		NeogitHunkHeaderHighlight = { bg = c.surface, fg = c.cyan, bold = true },
-		NeogitHunkHeaderCursor = { bg = c.highlight_high, fg = c.cyan, bold = true },
+		NeogitHunkHeaderCursor = { bg = c.selection, fg = c.cyan, bold = true },
 
 		NeogitStaged = { fg = c.git.add, bold = true },
 		NeogitUnstaged = { fg = c.warning, bold = true },
