@@ -18,11 +18,9 @@ function M.setup(opts)
 		red =           "#E66B80", -- errors
 		attribute =     "#B8D3D5", -- attributes & members (cool-grey, distinct from fg)
 
-		-- foreground (bright → dim)
 		fg  = "#DCE5E5", -- main text
 		fg2 = "#789AA1", -- operators, punctuation, secondary UI text
 
-		-- backgrounds (dark → light)
 		bg     = "#181A1C", -- main background
 		bg2    = "#1E2124", -- floats, popups, statusline, sidebars
 		border = "#282B2F", -- borders, separators, raised elements
@@ -39,9 +37,14 @@ function M.setup(opts)
 
 	colors.none = "NONE"
 
-	-- the secondary text tones derive from muted so they stay in key with it
+	-- the secondary text tones derive from fg2 so they stay in key with it
 	colors.comment = util.darken(colors.fg2, 0.09) -- comments, dimmer than operators
 	colors.faint = util.mix(colors.fg2, colors.bg, 0.45) -- line numbers, nontext, disabled
+
+	-- Faint color washes: an accent mixed over the background.
+	local wash = function(color, amount)
+		return util.mix(colors.bg, color, amount)
+	end
 
 	colors.success = colors.green
 	colors.error = colors.red
@@ -51,7 +54,7 @@ function M.setup(opts)
 
 	-- search & match
 	colors.search = colors.yellow
-	colors.search_bg = "#433B23" -- muted yellow wash: non-current matches read as faint yellow regions
+	colors.search_bg = wash(colors.yellow, 0.20) -- faint yellow wash: non-current matches
 	colors.substitute = colors.orange
 	colors.match = colors.yellow
 	colors.title = colors.cyan
@@ -61,11 +64,6 @@ function M.setup(opts)
 		delete = colors.red,
 		change = colors.cyan,
 	}
-
-	-- Faint color washes: an accent mixed over the background.
-	local wash = function(color, amount)
-		return util.mix(colors.bg, color, amount)
-	end
 
 	colors.diff = {
 		add = wash(colors.green, 0.12),
