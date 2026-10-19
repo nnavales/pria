@@ -116,9 +116,43 @@ local function to_oklch(hex)
 	return L, math.sqrt(A * A + B * B), atan2(B, A)
 end
 
-local function from_oklch(L, C, H)
-	local r, g, b = oklab_to_rgb(L, C * math.cos(H), C * math.sin(H))
+local function in_gamut(r, g, b)
+	local eps = 1e-6
+	return r >= -eps and r <= 1 + eps and g >= -eps and g <= 1 + eps and b >= -eps and b <= 1 + eps
+end
+
+-- Convert OKLab to hex, reducing chroma (never lightness or hue) until the
+-- color fits inside the sRGB gamut. Plain per-channel clipping would distort
+-- hue and break lighten/darken round-trips on saturated colors.
+local function oklab_to_hex(L, A, B)
+	local C = math.sqrt(A * A + B * B)
+	local cosH, sinH = 1, 0
+	if C > 0 then
+		cosH, sinH = A / C, B / C
+	end
+	local function sample(scale)
+		return oklab_to_rgb(L, C * scale * cosH, C * scale * sinH)
+	end
+
+	local r, g, b = sample(1)
+	if not in_gamut(r, g, b) then
+		local lo, hi = 0, 1
+		for _ = 1, 12 do
+			local mid = (lo + hi) / 2
+			local rr, gg, bb = sample(mid)
+			if in_gamut(rr, gg, bb) then
+				lo = mid
+			else
+				hi = mid
+			end
+		end
+		r, g, b = sample(lo)
+	end
 	return rgb_to_hex(r, g, b)
+end
+
+local function from_oklch(L, C, H)
+	return oklab_to_hex(L, C * math.cos(H), C * math.sin(H))
 end
 
 --- Raise a color's lightness, keeping its hue.
@@ -159,8 +193,7 @@ function M.mix(a, b, t)
 	local br, bg, bb = hex_to_rgb(b)
 	local al, aa, ab2 = rgb_to_oklab(ar, ag, ab)
 	local bl, ba, bb2 = rgb_to_oklab(br, bg, bb)
-	local r, g, blue = oklab_to_rgb(al + (bl - al) * t, aa + (ba - aa) * t, ab2 + (bb2 - ab2) * t)
-	return rgb_to_hex(r, g, blue)
+	return oklab_to_hex(al + (bl - al) * t, aa + (ba - aa) * t, ab2 + (bb2 - ab2) * t)
 end
 
 return M
