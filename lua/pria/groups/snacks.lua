@@ -6,17 +6,17 @@ M.url = "https://github.com/folke/snacks.nvim"
 function M.get(c, opts)
 	return {
 		SnacksDashboardDesc = { fg = c.fg },
-		SnacksDashboardFooter = { fg = c.dim },
-		SnacksDashboardHeader = { fg = c.dim, bold = true },
+		SnacksDashboardFooter = { fg = c.faint },
+		SnacksDashboardHeader = { fg = c.faint, bold = true },
 		SnacksDashboardIcon = { fg = c.fg },
 		SnacksDashboardKey = { fg = c.fg },
 		SnacksDashboardSpecial = { fg = c.fg },
 		SnacksDashboardDir = { fg = c.fg },
 
 		SnacksNotifierDebug = { fg = c.fg, bg = opts.transparent and c.none or c.bg },
-		SnacksNotifierBorderDebug = { fg = c.muted, bg = opts.transparent and c.none or c.bg },
-		SnacksNotifierIconDebug = { fg = c.muted },
-		SnacksNotifierTitleDebug = { fg = c.muted },
+		SnacksNotifierBorderDebug = { fg = c.fg2, bg = opts.transparent and c.none or c.bg },
+		SnacksNotifierIconDebug = { fg = c.fg2 },
+		SnacksNotifierTitleDebug = { fg = c.fg2 },
 
 		SnacksNotifierError = { fg = c.fg, bg = opts.transparent and c.none or c.bg },
 		SnacksNotifierBorderError = { fg = c.error, bg = opts.transparent and c.none or c.bg },
@@ -29,9 +29,9 @@ function M.get(c, opts)
 		SnacksNotifierTitleInfo = { fg = c.info },
 
 		SnacksNotifierTrace = { fg = c.fg, bg = opts.transparent and c.none or c.bg },
-		SnacksNotifierBorderTrace = { fg = c.muted, bg = opts.transparent and c.none or c.bg },
-		SnacksNotifierIconTrace = { fg = c.muted },
-		SnacksNotifierTitleTrace = { fg = c.muted },
+		SnacksNotifierBorderTrace = { fg = c.fg2, bg = opts.transparent and c.none or c.bg },
+		SnacksNotifierIconTrace = { fg = c.fg2 },
+		SnacksNotifierTitleTrace = { fg = c.fg2 },
 		SnacksNormal = { fg = c.fg, bg = c.bg },
 
 		SnacksNotifierWarn = { fg = c.fg, bg = opts.transparent and c.none or c.bg },
@@ -47,10 +47,10 @@ function M.get(c, opts)
 		SnacksProfilerBadgeInfo = { bg = c.focus, fg = c.cyan },
 		SnacksFooterKey = "SnacksProfilerIconInfo",
 		SnacksFooterDesc = "SnacksProfilerBadgeInfo",
-		SnacksProfilerIconTrace = { bg = c.bg2, fg = c.dim },
-		SnacksProfilerBadgeTrace = { bg = c.focus, fg = c.dim },
+		SnacksProfilerIconTrace = { bg = c.bg2, fg = c.faint },
+		SnacksProfilerBadgeTrace = { bg = c.focus, fg = c.faint },
 
-		SnacksIndent = { fg = c.muted, nocombine = true },
+		SnacksIndent = { fg = c.fg2, nocombine = true },
 		SnacksIndentScope = { fg = c.cyan, nocombine = true },
 
 		SnacksZenIcon = { fg = c.blue },
@@ -80,7 +80,7 @@ function M.get(c, opts)
 		SnacksIndent8 = { fg = c.fg, nocombine = true },
 
 		SnacksNotifierHistoryTitle = { fg = c.fg, bold = true },
-		SnacksNotifierHistoryDateTime = { fg = c.dim },
+		SnacksNotifierHistoryDateTime = { fg = c.faint },
 		SnacksNotifierMinimal = { fg = c.fg, bg = opts.transparent and c.none or c.bg },
 	}
 end

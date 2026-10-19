@@ -19,8 +19,8 @@ function M.setup(opts)
 		attribute =     "#B8D3D5", -- attributes & members (cool-grey, distinct from fg)
 
 		-- foreground (bright → dim)
-		fg    = "#DCE5E5", -- main text
-		muted = "#789AA1", -- operators, punctuation, secondary UI text
+		fg  = "#DCE5E5", -- main text
+		fg2 = "#789AA1", -- operators, punctuation, secondary UI text
 
 		-- backgrounds (dark → light)
 		bg     = "#181A1C", -- main background
@@ -40,8 +40,8 @@ function M.setup(opts)
 	colors.none = "NONE"
 
 	-- the secondary text tones derive from muted so they stay in key with it
-	colors.comment = util.darken(colors.muted, 0.09) -- comments, dimmer than operators
-	colors.dim = util.mix(colors.muted, colors.bg, 0.45) -- line numbers, nontext, disabled
+	colors.comment = util.darken(colors.fg2, 0.09) -- comments, dimmer than operators
+	colors.faint = util.mix(colors.fg2, colors.bg, 0.45) -- line numbers, nontext, disabled
 
 	colors.success = colors.green
 	colors.error = colors.red

@@ -5,7 +5,7 @@ M.url = "https://github.com/echasnovski/mini.icons"
 ---@type pria.HighlightsFn
 function M.get(c, opts)
 	return {
-		MiniIconsGrey = { fg = c.dim },
+		MiniIconsGrey = { fg = c.faint },
 		MiniIconsPurple = { fg = c.violet },
 		MiniIconsBlue = { fg = c.blue },
 		MiniIconsAzure = { fg = c.cyan },

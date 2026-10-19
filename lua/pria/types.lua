@@ -8,7 +8,7 @@
 ---@field teal string
 ---@field red string
 ---@field attribute string
----@field muted string
+---@field fg2 string
 ---@field fg string
 ---@field bg string
 ---@field bg2 string
@@ -59,7 +59,7 @@
 ---@field info string
 ---@field hint string
 ---@field comment string
----@field dim string
+---@field faint string
 ---@field search string
 ---@field search_bg string
 ---@field substitute string

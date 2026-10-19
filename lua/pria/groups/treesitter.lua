@@ -35,7 +35,7 @@ function M.get(c, opts)
 		["@keyword.function"] = "@keyword",
 		["@keyword.import"] = "@keyword",
 		["@keyword.coroutine"] = "@keyword",
-		["@keyword.operator"] = { fg = c.muted },
+		["@keyword.operator"] = { fg = c.fg2 },
 
 		["@keyword.conditional"] = "@keyword",
 		["@keyword.repeat"] = "Repeat",
@@ -90,7 +90,7 @@ function M.get(c, opts)
 		["@punctuation.bracket"] = "Delimiter",
 		["@punctuation.special"] = { fg = c.violet },
 		["@punctuation.bracket.regexp"] = "Delimiter",
-		["@punctuation.special.markdown"] = { fg = c.muted },
+		["@punctuation.special.markdown"] = { fg = c.fg2 },
 
 		["@none"] = {},
 		["@markup"] = "@none",
@@ -104,7 +104,7 @@ function M.get(c, opts)
 		["@markup.heading.5.markdown"] = { fg = c.orange },
 		["@markup.heading.6.markdown"] = { fg = c.violet },
 
-		["@markup.link"] = { fg = c.dim },
+		["@markup.link"] = { fg = c.faint },
 		["@markup.link.label"] = { fg = c.cyan },
 		["@markup.link.label.symbol"] = { fg = c.cyan },
 		["@markup.link.url"] = { fg = c.orange, underline = true },
@@ -112,7 +112,7 @@ function M.get(c, opts)
 		["@markup.list"] = { fg = c.blue },
 		["@markup.list.markdown"] = { fg = c.blue, bold = true },
 		["@markup.list.checked"] = { fg = c.fg },
-		["@markup.list.unchecked"] = { fg = c.dim },
+		["@markup.list.unchecked"] = { fg = c.faint },
 
 		["@markup.raw"] = "String",
 		["@markup.raw.markdown_inline"] = "@markup.raw",
@@ -136,7 +136,7 @@ function M.get(c, opts)
 
 		["@attribute.diff"] = { fg = c.orange },
 		["@parameter"] = { fg = c.fg },
-		["@punctuation"] = { fg = c.muted },
+		["@punctuation"] = { fg = c.fg2 },
 		["@regexp"] = "String",
 		["@symbol"] = "Identifier",
 		["@text"] = { fg = c.fg },
@@ -161,9 +161,9 @@ function M.get(c, opts)
 		["@float"] = "Number",
 		["@keyword.conditional.ternary"] = "@keyword",
 		["@conceal"] = "Conceal",
-		["@conceal.markdown"] = { fg = c.muted },
+		["@conceal.markdown"] = { fg = c.fg2 },
 		["@markup.quote"] = { fg = c.fg },
-		["@markup.raw.delimiter.markdown"] = { fg = c.muted },
+		["@markup.raw.delimiter.markdown"] = { fg = c.fg2 },
 
 		["@tag.attribute.tsx"] = "@tag.attribute",
 		["@tag.delimiter.tsx"] = "@tag.delimiter",
@@ -182,7 +182,7 @@ function M.get(c, opts)
 
 		htmlArg = { fg = c.attribute },
 		htmlBold = { bold = true },
-		htmlEndTag = { fg = c.muted },
+		htmlEndTag = { fg = c.fg2 },
 		htmlH1 = "Title",
 		htmlH2 = "Title",
 		htmlH3 = "Title",
@@ -190,7 +190,7 @@ function M.get(c, opts)
 		htmlH5 = "Title",
 		htmlItalic = { italic = true },
 		htmlLink = "Underlined",
-		htmlTag = { fg = c.muted },
+		htmlTag = { fg = c.fg2 },
 		htmlTagN = { fg = c.fg },
 		htmlTagName = { fg = c.cyan },
 		tsxAttrib = { fg = c.attribute },

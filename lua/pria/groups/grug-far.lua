@@ -5,16 +5,16 @@ M.url = "https://github.com/MagicDuck/grug-far.nvim"
 ---@type pria.HighlightsFn
 function M.get(c, opts)
 	return {
-		GrugFarHelpHeader = { fg = c.muted },
+		GrugFarHelpHeader = { fg = c.fg2 },
 		GrugFarHelpHeaderKey = { fg = c.cyan, bold = true },
 
 		GrugFarInputLabel = { fg = c.cyan, bold = true },
-		GrugFarInputPlaceholder = { fg = c.dim },
+		GrugFarInputPlaceholder = { fg = c.faint },
 
 		GrugFarResultsHeader = { fg = c.violet, bold = true },
 		GrugFarResultsStats = { fg = c.info },
-		GrugFarResultsLineNo = { fg = c.dim },
-		GrugFarResultsLineColumn = { fg = c.muted },
+		GrugFarResultsLineNo = { fg = c.faint },
+		GrugFarResultsLineColumn = { fg = c.fg2 },
 		GrugFarResultsChangeIndicator = { fg = c.git.change },
 
 		GrugFarResultsMatch = { fg = c.bg, bg = c.search, bold = true },
@@ -30,7 +30,7 @@ function M.get(c, opts)
 
 		GrugFarBufferHeader = { fg = c.cyan, bold = true },
 		GrugFarBufferSpinner = { fg = c.cyan },
-		GrugFarBufferSearchPrefix = { fg = c.muted },
+		GrugFarBufferSearchPrefix = { fg = c.fg2 },
 	}
 end
 

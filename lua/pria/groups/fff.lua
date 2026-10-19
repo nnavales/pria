@@ -16,15 +16,15 @@ function M.get(c, opts)
 		FFFMatch = { fg = c.search, bold = true },
 
 		-- secondary / metadata text
-		FFFDir = { fg = c.muted },
-		FFFDebug = { fg = c.muted },
+		FFFDir = { fg = c.fg2 },
+		FFFDebug = { fg = c.fg2 },
 		FFFFrecency = { fg = c.orange },
 		FFFComboHeader = { fg = c.orange },
 
 		-- grep results
-		FFFGrepLineNumber = { fg = c.dim },
+		FFFGrepLineNumber = { fg = c.faint },
 		FFFGrepRegexActive = { fg = c.info },
-		FFFGrepPlainActive = { fg = c.muted },
+		FFFGrepPlainActive = { fg = c.fg2 },
 		FFFGrepFuzzyActive = { fg = c.hint },
 
 		-- git status
@@ -32,8 +32,8 @@ function M.get(c, opts)
 		FFFGitModified = { fg = c.git.change },
 		FFFGitDeleted = { fg = c.git.delete },
 		FFFGitRenamed = { fg = c.blue },
-		FFFGitUntracked = { fg = c.muted },
-		FFFGitIgnored = { fg = c.dim },
+		FFFGitUntracked = { fg = c.fg2 },
+		FFFGitIgnored = { fg = c.faint },
 	}
 end
 

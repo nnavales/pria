@@ -5,7 +5,7 @@ M.url = "https://github.com/folke/flash.nvim"
 ---@type pria.HighlightsFn
 function M.get(c, opts)
 	return {
-		FlashBackdrop = { fg = c.dim },
+		FlashBackdrop = { fg = c.faint },
 		FlashLabel = { bg = c.substitute, bold = true, fg = c.bg },
 	}
 end

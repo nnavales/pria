@@ -15,10 +15,10 @@ function M.get(c, opts)
 		NeogitHEADLabel = { fg = c.orange, bold = true },
 		NeogitTag = { fg = c.violet },
 		NeogitTagName = { fg = c.violet },
-		NeogitTagDistance = { fg = c.dim },
+		NeogitTagDistance = { fg = c.faint },
 
 		NeogitCommitViewHeader = { fg = c.green, bold = true },
-		NeogitObjectId = { fg = c.dim },
+		NeogitObjectId = { fg = c.faint },
 		NeogitCommitMessage = { fg = c.fg },
 		NeogitCommitMessageHighlight = { fg = c.fg, bold = true },
 
@@ -32,16 +32,16 @@ function M.get(c, opts)
 		NeogitChangeUpdated = { fg = c.warning },
 		NeogitChangeCopied = { fg = c.teal },
 
-		NeogitDiffContext = { fg = c.dim },
+		NeogitDiffContext = { fg = c.faint },
 		NeogitDiffContextHighlight = { bg = c.focus, fg = c.fg },
 
-		NeogitHunkHeader = { bg = c.bg2, fg = c.dim },
+		NeogitHunkHeader = { bg = c.bg2, fg = c.faint },
 		NeogitHunkHeaderHighlight = { bg = c.bg2, fg = c.cyan, bold = true },
 		NeogitHunkHeaderCursor = { bg = c.selection, fg = c.cyan, bold = true },
 
 		NeogitStaged = { fg = c.git.add, bold = true },
 		NeogitUnstaged = { fg = c.warning, bold = true },
-		NeogitUntracked = { fg = c.muted },
+		NeogitUntracked = { fg = c.fg2 },
 		NeogitConflict = { fg = c.error, bold = true },
 		NeogitUnmergedInto = { fg = c.error },
 		NeogitUnpulledFrom = { fg = c.hint },
@@ -52,7 +52,7 @@ function M.get(c, opts)
 		NeogitCommandText = { fg = c.fg },
 		NeogitCommandCodeNormal = { fg = c.green },
 		NeogitCommandCodeError = { fg = c.error },
-		NeogitCommandTime = { fg = c.dim },
+		NeogitCommandTime = { fg = c.faint },
 		NeogitLogViewHeader = { fg = c.green, bold = true },
 
 		NeogitNotificationInfo = { fg = c.info },
@@ -62,16 +62,16 @@ function M.get(c, opts)
 		NeogitPopupSectionTitle = { fg = c.green, bold = true },
 		NeogitPopupSwitchKey = { fg = c.orange },
 		NeogitPopupSwitchEnabled = { fg = c.green },
-		NeogitPopupSwitchDisabled = { fg = c.dim },
+		NeogitPopupSwitchDisabled = { fg = c.faint },
 		NeogitPopupOptionKey = { fg = c.violet },
 		NeogitPopupOptionEnabled = { fg = c.green },
-		NeogitPopupOptionDisabled = { fg = c.dim },
+		NeogitPopupOptionDisabled = { fg = c.faint },
 		NeogitPopupActionKey = { fg = c.cyan },
-		NeogitPopupActionDisabled = { fg = c.dim },
+		NeogitPopupActionDisabled = { fg = c.faint },
 		NeogitPopupActionHighlight = { fg = c.blue, bold = true },
 		NeogitPopupConfigKey = { fg = c.teal },
 		NeogitPopupConfigEnabled = { fg = c.green },
-		NeogitPopupConfigDisabled = { fg = c.dim },
+		NeogitPopupConfigDisabled = { fg = c.faint },
 
 		NeogitGraphRed = { fg = c.error },
 		NeogitGraphGreen = { fg = c.git.add },
@@ -80,7 +80,7 @@ function M.get(c, opts)
 		NeogitGraphPurple = { fg = c.violet },
 		NeogitGraphCyan = { fg = c.cyan },
 		NeogitGraphWhite = { fg = c.fg },
-		NeogitGraphGray = { fg = c.dim },
+		NeogitGraphGray = { fg = c.faint },
 		NeogitGraphBoldRed = { fg = c.error, bold = true },
 		NeogitGraphBoldGreen = { fg = c.git.add, bold = true },
 		NeogitGraphBoldYellow = { fg = c.yellow, bold = true },
@@ -91,10 +91,10 @@ function M.get(c, opts)
 
 		NeogitFloatHeader = { bg = c.bg2, fg = c.fg, bold = true },
 		NeogitFloatHeaderHighlight = { bg = c.bg2, fg = c.cyan, bold = true },
-		NeogitFloatFooter = { bg = c.bg2, fg = c.dim },
+		NeogitFloatFooter = { bg = c.bg2, fg = c.faint },
 		NeogitCommitSelectAction = { fg = c.orange, bold = true },
-		NeogitCommitViewDescription = { fg = c.dim, italic = true },
-		NeogitRebaseDone = { fg = c.muted },
+		NeogitCommitViewDescription = { fg = c.faint, italic = true },
+		NeogitRebaseDone = { fg = c.fg2 },
 	}
 end
 
