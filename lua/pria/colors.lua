@@ -31,15 +31,15 @@ function M.setup(opts)
 
 		-- highlight wash
 		highlight_low = "#1B1F23",
+
+		-- unified selection (violet-slate): Visual, menu/picker selection, LSP refs
+		selection = "#2F2735",
 	}
 
 	---@class pria.ColorScheme: Palette
 	local colors = vim.deepcopy(palette)
 
 	colors.none = "NONE"
-
-	-- unified selection (violet-slate): Visual, menu/picker selection, LSP refs
-	colors.selection = "#2F2735"
 
 	-- comments: dimmer than muted (punctuation/operators) so they read as a separate layer
 	colors.comment = "#607C85"

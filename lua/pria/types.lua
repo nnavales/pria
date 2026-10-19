@@ -16,6 +16,7 @@
 ---@field surface string
 ---@field overlay string
 ---@field highlight_low string
+---@field selection string
 
 ---@class pria.GitColors
 ---@field add string
@@ -65,7 +66,6 @@
 ---@field substitute string
 ---@field match string
 ---@field title string
----@field selection string
 ---@field git pria.GitColors
 ---@field diff pria.DiffColors
 ---@field diagnostic_fg pria.DiagnosticColors
