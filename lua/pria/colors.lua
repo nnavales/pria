@@ -28,8 +28,8 @@ function M.setup(opts)
 		bg2    = "#1E2124", -- floats, popups, statusline, sidebars
 		border = "#282B2F", -- borders, separators, raised elements
 
-		-- highlight wash
-		highlight_low = "#1B1F23",
+		-- focus wash: subtle background behind the cursor and active context
+		focus = "#1B1F23",
 
 		-- unified selection (violet-slate): Visual, menu/picker selection, LSP refs
 		selection = "#2F2735",

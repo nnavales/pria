@@ -57,9 +57,9 @@ function M.get(c, opts)
 		Cursor = { bg = c.fg, fg = c.bg },
 		lCursor = { bg = c.fg, fg = c.bg },
 		CursorIM = { bg = c.fg, fg = c.bg },
-		CursorLine = { bg = c.highlight_low },
-		CursorColumn = { bg = c.highlight_low },
-		ColorColumn = { bg = c.highlight_low },
+		CursorLine = { bg = c.focus },
+		CursorColumn = { bg = c.focus },
+		ColorColumn = { bg = c.focus },
 
 		LineNr = { fg = c.dim },
 		LineNrAbove = { fg = c.dim },
@@ -68,7 +68,7 @@ function M.get(c, opts)
 
 		SignColumn = { fg = c.dim, bg = c.none },
 		SignColumnSB = { fg = c.dim, bg = c.none },
-		Folded = { fg = c.blue, bg = opts.transparent and c.none or c.highlight_low },
+		Folded = { fg = c.blue },
 		FoldColumn = { fg = c.dim, bg = opts.transparent and c.none or c.bg },
 
 		VertSplit = { fg = opts.borders and c.border or c.bg },

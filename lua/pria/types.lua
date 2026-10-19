@@ -14,7 +14,7 @@
 ---@field bg string
 ---@field bg2 string
 ---@field border string
----@field highlight_low string
+---@field focus string
 ---@field selection string
 
 ---@class pria.GitColors
