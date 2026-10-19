@@ -9,6 +9,7 @@
 ---@field red string
 ---@field attribute string
 ---@field muted string
+---@field comment string
 ---@field fg string
 ---@field dim string
 ---@field bg string

@@ -19,9 +19,10 @@ function M.setup(opts)
 		attribute =     "#B8D3D5", -- attributes & members (cool-grey, distinct from fg)
 
 		-- foreground (bright → dim)
-		fg       = "#DCE5E5", -- main text
-		muted    = "#789AA1", -- comments, operators, punctuation
-		dim      = "#4B5B63", -- line numbers, nontext, disabled
+		fg      = "#DCE5E5", -- main text
+		muted   = "#789AA1", -- operators, punctuation, secondary UI text
+		comment = "#607C85", -- comments (dimmer than muted, read as a separate layer)
+		dim     = "#4B5B63", -- line numbers, nontext, disabled
 
 		-- backgrounds (dark → light)
 		bg     = "#181A1C", -- main background
@@ -30,6 +31,7 @@ function M.setup(opts)
 
 		-- focus wash: subtle background behind the cursor and active context
 		focus = "#1B1F23",
+
 		-- unified selection (violet-slate): Visual, menu/picker selection, LSP refs
 		selection = "#2F2735",
 	}
@@ -38,9 +40,6 @@ function M.setup(opts)
 	local colors = vim.deepcopy(palette)
 
 	colors.none = "NONE"
-
-	-- comments: dimmer than muted (punctuation/operators) so they read as a separate layer
-	colors.comment = "#607C85"
 
 	colors.success = colors.green
 	colors.error = colors.red
