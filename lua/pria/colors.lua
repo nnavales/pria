@@ -19,10 +19,8 @@ function M.setup(opts)
 		attribute =     "#B8D3D5", -- attributes & members (cool-grey, distinct from fg)
 
 		-- foreground (bright → dim)
-		fg      = "#DCE5E5", -- main text
-		muted   = "#789AA1", -- operators, punctuation, secondary UI text
-		comment = "#607C85", -- comments (dimmer than muted, read as a separate layer)
-		dim     = "#4B5B63", -- line numbers, nontext, disabled
+		fg    = "#DCE5E5", -- main text
+		muted = "#789AA1", -- operators, punctuation, secondary UI text
 
 		-- backgrounds (dark → light)
 		bg     = "#181A1C", -- main background
@@ -40,6 +38,10 @@ function M.setup(opts)
 	local colors = vim.deepcopy(palette)
 
 	colors.none = "NONE"
+
+	-- the secondary text tones derive from muted so they stay in key with it
+	colors.comment = util.darken(colors.muted, 0.09) -- comments, dimmer than operators
+	colors.dim = util.mix(colors.muted, colors.bg, 0.45) -- line numbers, nontext, disabled
 
 	colors.success = colors.green
 	colors.error = colors.red

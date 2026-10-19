@@ -9,9 +9,7 @@
 ---@field red string
 ---@field attribute string
 ---@field muted string
----@field comment string
 ---@field fg string
----@field dim string
 ---@field bg string
 ---@field bg2 string
 ---@field border string
@@ -60,6 +58,8 @@
 ---@field warning string
 ---@field info string
 ---@field hint string
+---@field comment string
+---@field dim string
 ---@field search string
 ---@field search_bg string
 ---@field substitute string
