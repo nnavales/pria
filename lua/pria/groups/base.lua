@@ -20,9 +20,9 @@ function M.get(c, opts)
 
 		String = { fg = c.green },
 		Constant = { fg = c.fg },
-		Number = { fg = c.orange },
-		Float = { fg = c.orange },
-		Boolean = { fg = c.orange },
+		Number = { fg = c.rose },
+		Float = { fg = c.rose },
+		Boolean = { fg = c.rose },
 		Character = { fg = c.green },
 		Special = { fg = c.violet },
 		SpecialChar = { fg = c.green },
@@ -117,7 +117,7 @@ function M.get(c, opts)
 		diffNewFile = { fg = c.fg2, bg = c.diff.add },
 		diffLine = { fg = c.fg2 },
 		diffFile = { fg = c.cyan },
-		diffIndexLine = { fg = c.orange },
+		diffIndexLine = { fg = c.rose },
 
 		ModeMsg = { fg = c.fg, bold = true },
 		MsgArea = { fg = c.fg, bg = opts.transparent and c.none or c.bg },
@@ -173,7 +173,7 @@ function M.get(c, opts)
 		debugPC = { bg = c.bg3 },
 		debugBreakpoint = { fg = c.error },
 
-		RedrawDebugClear = { fg = c.bg, bg = c.orange },
+		RedrawDebugClear = { fg = c.bg, bg = c.yellow },
 		RedrawDebugComposed = { fg = c.bg, bg = c.teal },
 		RedrawDebugRecompose = { fg = c.bg, bg = c.red },
 		StatusLineTerm = { fg = c.bg, bg = c.teal },

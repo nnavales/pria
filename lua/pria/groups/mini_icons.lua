@@ -12,7 +12,7 @@ function M.get(c, opts)
 		MiniIconsCyan = { fg = c.teal },
 		MiniIconsGreen = { fg = c.green },
 		MiniIconsYellow = { fg = c.yellow },
-		MiniIconsOrange = { fg = c.orange },
+		MiniIconsOrange = { fg = c.yellow },
 		MiniIconsRed = { fg = c.red },
 	}
 end

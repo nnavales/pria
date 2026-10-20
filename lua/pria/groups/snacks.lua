@@ -74,7 +74,7 @@ function M.get(c, opts)
 		SnacksIndent2 = { fg = c.cyan, nocombine = true },
 		SnacksIndent3 = { fg = c.teal, nocombine = true },
 		SnacksIndent4 = { fg = c.green, nocombine = true },
-		SnacksIndent5 = { fg = c.orange, nocombine = true },
+		SnacksIndent5 = { fg = c.rose, nocombine = true },
 		SnacksIndent6 = { fg = c.violet, nocombine = true },
 		SnacksIndent7 = { fg = c.red, nocombine = true },
 		SnacksIndent8 = { fg = c.fg, nocombine = true },

@@ -9,7 +9,7 @@ local M = {}
 ---@field plugins table<string, boolean>
 M.defaults = {
 	transparent = false, -- disable background color (use terminal background)
-	dim = true, -- dim inactive window `:h hl-NormalNC`
+	dim = false, -- dim inactive window `:h hl-NormalNC`
 	borders = true, -- show borders around floating windows and popups
 	styles = { -- syntax element styles: { italic = true, bold = true, underline = true}
 		keywords = {},

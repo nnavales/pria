@@ -15,16 +15,31 @@ function M.setup(opts)
 		fg  = "#D1D1D1", -- main text
 		fg2 = "#8A9698", -- secondary text (platinum, seeds comment/faint)
 
-		violet  =       "#B895DE", -- decorators, rare things  
-		blue =          "#5AA6E6", -- keywords  
-		green  =        "#6AC770", -- strings   
-		orange =        "#EFA061", -- numbers, bools, nulls  
-		yellow =        "#D7CB6E", -- UI only: warnings, search/match  
-		teal =          "#5BD3C0", -- functions, methods  
-		cyan =          "#92E1F0", -- types, builtin-types
-		red =           "#E66B80", -- errors
-		silver  =       "#B8D3D5", -- members/attributes (cool pale tone, distinct from fg)
+		rose    =       "#F7ABD1", -- numbers, bools, literals  
+
+		violet  =       "#ffffff", -- decorators, rare things  
+		blue =          "#ffffff", -- keywords  
+		green  =        "#ffffff", -- strings   
+		yellow =        "#ffffff", -- UI only: warnings, search/match  
+		teal =          "#ffffff", -- functions, methods  
+		cyan =          "#ffffff", -- types, builtin-types
+		red =           "#ffffff", -- errors
+		silver  =       "#ffffff", -- members/attributes (cool pale tone, distinct from fg)
+
+
+		-- violet  =       "#B87EE3", -- decorators, rare things  
+		-- blue =          "#5AA6E6", -- keywords  
+		-- green  =        "#6AC770", -- strings   
+		-- yellow =        "#D7CB6E", -- UI only: warnings, search/match  
+		-- teal =          "#5BD3C0", -- functions, methods  
+		-- cyan =          "#92E1F0", -- types, builtin-types
+		-- red =           "#E66B80", -- errors
+		-- silver  =       "#B8D3D5", -- members/attributes (cool pale tone, distinct from fg)
 	}
+
+	thing = false
+	nunm = 055
+	float = 10.69
 
 	---@class pria.ColorScheme: Palette
 	local colors = vim.deepcopy(palette)
@@ -41,7 +56,7 @@ function M.setup(opts)
 	end
 
 	-- unified selection (violet): Visual, menu/picker selection, LSP refs
-	colors.selection = wash(colors.violet, 0.15)
+	colors.selection = wash(colors.blue, 0.25)
 
 	colors.success = colors.green
 	colors.error = colors.red
@@ -51,8 +66,8 @@ function M.setup(opts)
 
 	-- search & match
 	colors.search = colors.yellow
-	colors.search_bg = wash(colors.yellow, 0.20) -- faint yellow wash: non-current matches
-	colors.substitute = colors.orange
+	colors.search_bg = wash(colors.cyan, 0.20) -- faint yellow wash: non-current matches
+	colors.substitute = colors.yellow
 	colors.match = colors.yellow
 	colors.title = colors.cyan
 
@@ -93,7 +108,7 @@ function M.setup(opts)
 			black = colors.bg,
 			red = colors.red,
 			green = colors.green,
-			orange = colors.orange,
+			yellow = colors.yellow,
 			blue = colors.cyan,
 			magenta = colors.blue,
 			cyan = colors.teal,
@@ -101,13 +116,13 @@ function M.setup(opts)
 		}
 
 		-- Brights are the light variants of their base color.
-		-- ANSI "yellow" (slot 3) maps to `orange`, so bright_yellow follows it.
+		-- ANSI yellow (slot 3) maps to the brass warning tone.
 		local bright = 0.08
 		for name, base in pairs({
 			black = terminal.black,
 			red = terminal.red,
 			green = terminal.green,
-			yellow = terminal.orange,
+			yellow = terminal.yellow,
 			blue = terminal.blue,
 			magenta = terminal.magenta,
 			cyan = terminal.cyan,

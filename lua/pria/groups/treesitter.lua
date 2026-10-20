@@ -22,7 +22,7 @@ function M.get(c, opts)
 		["@character.special"] = "@character",
 
 		["@constant"] = "Constant",
-		["@constant.builtin"] = { fg = c.orange },
+		["@constant.builtin"] = { fg = c.rose },
 		["@constant.macro"] = "@constant",
 		["@constant.regexp"] = "@constant",
 
@@ -101,13 +101,13 @@ function M.get(c, opts)
 		["@markup.heading.2.markdown"] = { fg = c.cyan },
 		["@markup.heading.3.markdown"] = { fg = c.teal },
 		["@markup.heading.4.markdown"] = { fg = c.green },
-		["@markup.heading.5.markdown"] = { fg = c.orange },
+		["@markup.heading.5.markdown"] = { fg = c.rose },
 		["@markup.heading.6.markdown"] = { fg = c.violet },
 
 		["@markup.link"] = { fg = c.faint },
 		["@markup.link.label"] = { fg = c.cyan },
 		["@markup.link.label.symbol"] = { fg = c.cyan },
-		["@markup.link.url"] = { fg = c.orange, underline = true },
+		["@markup.link.url"] = { fg = c.rose, underline = true },
 
 		["@markup.list"] = { fg = c.blue },
 		["@markup.list.markdown"] = { fg = c.blue, bold = true },
@@ -134,7 +134,7 @@ function M.get(c, opts)
 
 		["@tag.javascript"] = "@tag",
 
-		["@attribute.diff"] = { fg = c.orange },
+		["@attribute.diff"] = { fg = c.yellow },
 		["@parameter"] = { fg = c.fg },
 		["@punctuation"] = { fg = c.fg2 },
 		["@regexp"] = "String",
@@ -152,12 +152,12 @@ function M.get(c, opts)
 		["@text.strong"] = { bold = true },
 		["@text.title"] = "Title",
 		["@text.underline"] = { underline = true },
-		["@text.uri"] = { fg = c.orange, underline = true },
+		["@text.uri"] = { fg = c.rose, underline = true },
 		["@text.warning"] = { fg = c.warning },
 
 		["@string.special"] = "String",
 		["@string.special.symbol"] = "Identifier",
-		["@string.special.url"] = { fg = c.orange, underline = true },
+		["@string.special.url"] = { fg = c.rose, underline = true },
 		["@float"] = "Number",
 		["@keyword.conditional.ternary"] = "@keyword",
 		["@conceal"] = "Conceal",

@@ -2,7 +2,7 @@
 ---@field blue string
 ---@field green string
 ---@field violet string
----@field orange string
+---@field rose string
 ---@field yellow string
 ---@field cyan string
 ---@field teal string
@@ -35,7 +35,7 @@
 ---@field black string
 ---@field red string
 ---@field green string
----@field orange string
+---@field yellow string
 ---@field blue string
 ---@field magenta string
 ---@field cyan string

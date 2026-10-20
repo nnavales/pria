@@ -18,8 +18,8 @@ function M.get(c, opts)
 		-- secondary / metadata text
 		FFFDir = { fg = c.fg2 },
 		FFFDebug = { fg = c.fg2 },
-		FFFFrecency = { fg = c.orange },
-		FFFComboHeader = { fg = c.orange },
+		FFFFrecency = { fg = c.rose },
+		FFFComboHeader = { fg = c.rose },
 
 		-- grep results
 		FFFGrepLineNumber = { fg = c.faint },
