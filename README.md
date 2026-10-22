@@ -15,37 +15,27 @@ Pria is a colorscheme of muted metal and luminous color.
 
 ```lua
 {
-  "nnavales/paragon.nvim",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    vim.cmd.colorscheme("pria")
-  end,
+    "nnavales/pria",
+    lazy = false,
+    priority = 1000,
+    opts = {
+        transparent = false,                    -- Disable background color (use terminal background)
+        dim = true,                             -- Dim inactive windows
+        borders = true,                         -- Show borders around floating windows and popups
+        terminal_colors = true,                 -- Set Neovim terminal colors
+        styles = {                              -- Syntax element styles
+            keywords = {},                      -- if, for, return, break, continue
+            functions = {},                     -- foo(), bar(), method calls
+            types = {},                         -- class, struct, int, enum
+            comments = { italic = false },      -- Line and block comments
+            builtins = { italic = true },       -- Built-in variables (self, this, super)
+        },
+    },
 }
+
 ```
 
-### Extended configuration
-
-`setup()` is only needed when you want to change the defaults. Call it before applying the theme.
-
-```lua
-require("pria").setup({
-  transparent = false,                -- Disable background color (use terminal background)
-  dim = true,                         -- Dim inactive windows
-  borders = true,                     -- Show borders around floating windows and popups
-  terminal_colors = true,             -- Set Neovim terminal colors
-  styles = {                          -- Syntax element styles
-    keywords = {},                    -- if, for, return, break, continue
-    functions = {},                   -- foo(), bar(), method calls
-    types = {},                       -- class, struct, int, enum
-    comments = { italic = false },    -- Line and block comments
-    builtins = { italic = true },     -- Built-in variables (self, this, super)
-  },
-  plugins = {                         -- Plugin highlight groups
-    telescope = false,                -- Disable the Telescope group
-  },
-})
-
+```vim
 vim.cmd.colorscheme("pria")
 ```
 
