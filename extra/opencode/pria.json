@@ -3,11 +3,12 @@
   "base": {
     "categorical": [
       "interactive",
+      "accent",
       "lilac",
+      "blue",
       "green",
       "yellow",
-      "red",
-      "blue"
+      "red"
     ],
     "text": {
       "base": "#D3D9DA",
@@ -45,7 +46,7 @@
           "base": "#FF7A7A"
         },
         "warning": {
-          "base": "#E3B341"
+          "base": "#ECA25C"
         },
         "success": {
           "base": "#89E28D"
@@ -58,8 +59,8 @@
     "background": {
       "base": "#212527",
       "raised": {
-        "base": "#1C1F21",
-        "high": "#2A2F32",
+        "base": "$hue.neutral.700",
+        "high": "$hue.neutral.600",
         "max": "#394B5B"
       },
       "action": {
@@ -77,7 +78,7 @@
         }
       },
       "formfield": {
-        "base": "#1C1F21"
+        "base": "$hue.neutral.700"
       },
       "feedback": {
         "error": {
@@ -171,9 +172,9 @@
         "400": "#8A9698",
         "500": "#586063",
         "600": "#2A2F32",
-        "700": "#212527",
-        "800": "#1C1F21",
-        "900": "#141719"
+        "700": "#1C1F21",
+        "800": "#181B1D",
+        "900": "#121416"
       },
       "accent": {
         "100": "#FFFFFF",
