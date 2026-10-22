@@ -1,7 +1,7 @@
 -- Development helpers. Opt-in via `require("pria").dev()`.
 local M = {}
 
--- Build a reverse map of "#rrggbb" -> palette key (e.g. "#5fd3bb" -> "teal").
+-- Build a reverse map of "#rrggbb" -> palette key (e.g. "#34daca" -> "cyan").
 local function palette_map()
 	local colors = require("pria.colors").setup()
 	local map = {}

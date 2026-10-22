@@ -15,7 +15,7 @@ function M.get(c, opts)
 		["@string"] = "String",
 		["@string.documentation"] = "@string",
 		["@string.regexp"] = { fg = c.green },
-		["@string.escape"] = { fg = c.violet },
+		["@string.escape"] = { fg = c.lilac },
 
 		["@character"] = "Character",
 		["@character.printf"] = "@character",
@@ -35,7 +35,7 @@ function M.get(c, opts)
 		["@keyword.function"] = "@keyword",
 		["@keyword.import"] = "@keyword",
 		["@keyword.coroutine"] = "@keyword",
-		["@keyword.operator"] = { fg = c.fg2 },
+		["@keyword.operator"] = "@keyword",
 
 		["@keyword.conditional"] = "@keyword",
 		["@keyword.repeat"] = "Repeat",
@@ -56,10 +56,12 @@ function M.get(c, opts)
 		["@function.macro"] = "@function",
 
 		["@constructor"] = "Function",
+		["@constructor.lua"] = "@punctuation.bracket",
 
 		["@attribute"] = "PreProc",
 		["@attribute.builtin"] = "@attribute",
 		["@annotation"] = "PreProc",
+		["@decorator"] = "PreProc",
 
 		["@type"] = "Type",
 		["@type.builtin"] = "@type",
@@ -67,7 +69,7 @@ function M.get(c, opts)
 
 		["@property"] = { fg = c.silver },
 
-		["@tag"] = { fg = c.cyan },
+		["@tag"] = { fg = c.sky },
 		["@tag.builtin"] = "@tag",
 		["@tag.attribute"] = { fg = c.silver },
 		["@tag.delimiter"] = "Delimiter",
@@ -88,25 +90,25 @@ function M.get(c, opts)
 
 		["@punctuation.delimiter"] = "Delimiter",
 		["@punctuation.bracket"] = "Delimiter",
-		["@punctuation.special"] = { fg = c.violet },
+		["@punctuation.special"] = { fg = c.lilac },
+		["@punctuation.special.diff"] = { fg = c.structure },
 		["@punctuation.bracket.regexp"] = "Delimiter",
-		["@punctuation.special.markdown"] = { fg = c.fg2 },
+		["@punctuation.special.markdown"] = { fg = c.structure },
 
 		["@none"] = {},
 		["@markup"] = "@none",
 
 		["@markup.heading"] = "Title",
-
-		["@markup.heading.1.markdown"] = { fg = c.blue },
-		["@markup.heading.2.markdown"] = { fg = c.cyan },
-		["@markup.heading.3.markdown"] = { fg = c.teal },
-		["@markup.heading.4.markdown"] = { fg = c.green },
-		["@markup.heading.5.markdown"] = { fg = c.rose },
-		["@markup.heading.6.markdown"] = { fg = c.violet },
+		["@markup.heading.1"] = { fg = c.blue },
+		["@markup.heading.2"] = { fg = c.sky },
+		["@markup.heading.3"] = { fg = c.cyan },
+		["@markup.heading.4"] = { fg = c.green },
+		["@markup.heading.5"] = { fg = c.rose },
+		["@markup.heading.6"] = { fg = c.lilac },
 
 		["@markup.link"] = { fg = c.faint },
-		["@markup.link.label"] = { fg = c.cyan },
-		["@markup.link.label.symbol"] = { fg = c.cyan },
+		["@markup.link.label"] = { fg = c.sky },
+		["@markup.link.label.symbol"] = { fg = c.sky },
 		["@markup.link.url"] = { fg = c.rose, underline = true },
 
 		["@markup.list"] = { fg = c.blue },
@@ -134,9 +136,9 @@ function M.get(c, opts)
 
 		["@tag.javascript"] = "@tag",
 
-		["@attribute.diff"] = { fg = c.yellow },
+		["@attribute.diff"] = { fg = c.fg2 },
 		["@parameter"] = { fg = c.fg },
-		["@punctuation"] = { fg = c.fg2 },
+		["@punctuation"] = { fg = c.structure },
 		["@regexp"] = "String",
 		["@symbol"] = "Identifier",
 		["@text"] = { fg = c.fg },
@@ -161,9 +163,7 @@ function M.get(c, opts)
 		["@float"] = "Number",
 		["@keyword.conditional.ternary"] = "@keyword",
 		["@conceal"] = "Conceal",
-		["@conceal.markdown"] = { fg = c.fg2 },
 		["@markup.quote"] = { fg = c.fg },
-		["@markup.raw.delimiter.markdown"] = { fg = c.fg2 },
 
 		["@tag.attribute.tsx"] = "@tag.attribute",
 		["@tag.delimiter.tsx"] = "@tag.delimiter",
@@ -192,7 +192,7 @@ function M.get(c, opts)
 		htmlLink = "Underlined",
 		htmlTag = { fg = c.fg2 },
 		htmlTagN = { fg = c.fg },
-		htmlTagName = { fg = c.cyan },
+		htmlTagName = { fg = c.sky },
 		tsxAttrib = { fg = c.silver },
 	}
 end

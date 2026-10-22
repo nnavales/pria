@@ -17,6 +17,7 @@ function M.get(c)
 		["@lsp.type.keyword"] = "@keyword",
 		["@lsp.type.lifetime"] = "@keyword.storage",
 		["@lsp.type.namespace"] = "@module",
+		["@lsp.type.namespace.go"] = {},
 		["@lsp.type.namespace.python"] = "@variable",
 		["@lsp.type.number"] = "@number",
 		["@lsp.type.operator"] = "@operator",
@@ -25,6 +26,7 @@ function M.get(c)
 		["@lsp.type.selfKeyword"] = "@variable.builtin",
 		["@lsp.type.selfTypeKeyword"] = "@variable.builtin",
 		["@lsp.type.string"] = "@string",
+		["@lsp.type.string.go"] = {},
 		["@lsp.type.typeAlias"] = "@type.definition",
 		["@lsp.type.unresolvedReference"] = { undercurl = true, sp = c.error },
 		["@lsp.type.variable"] = {}, -- use treesitter styles
@@ -37,6 +39,7 @@ function M.get(c)
 		["@lsp.typemod.macro.defaultLibrary"] = "@function.builtin",
 		["@lsp.typemod.method.defaultLibrary"] = "@function.builtin",
 		["@lsp.typemod.operator.injected"] = "@operator",
+		["@lsp.typemod.string.format"] = "@string.escape",
 		["@lsp.typemod.string.injected"] = "@string",
 		["@lsp.typemod.struct.defaultLibrary"] = "@type.builtin",
 		["@lsp.typemod.type.defaultLibrary"] = "@type.builtin",

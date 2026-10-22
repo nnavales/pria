@@ -10,7 +10,6 @@ M.plugins = {
 	["fff.nvim"] = "fff",
 	["grug-far.nvim"] = "grug-far",
 	["mini.icons"] = "mini_icons",
-	["neogit"] = "neogit",
 	["snacks.nvim"] = "snacks",
 }
 

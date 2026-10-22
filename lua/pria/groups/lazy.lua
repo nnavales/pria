@@ -6,7 +6,7 @@ M.url = "https://github.com/folke/lazy.nvim"
 function M.get(c, opts)
 	return {
 		LazyProgressDone = { bold = true, fg = c.green },
-		LazyProgressTodo = { bold = true, fg = c.violet },
+		LazyProgressTodo = { bold = true, fg = c.lilac },
 	}
 end
 

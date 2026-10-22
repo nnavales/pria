@@ -7,9 +7,11 @@ function M.get(c, opts)
 	return {
 		TelescopeNormal = { fg = c.fg, bg = c.bg2 },
 		TelescopePromptNormal = { fg = c.fg, bg = c.bg2 },
-		TelescopeResultsNormal = { fg = c.fg2, bg = c.bg2 },
+		TelescopePromptPrefix = { fg = c.fg },
+		TelescopeResultsNormal = { fg = c.fg, bg = c.bg2 },
 
-		TelescopeSelection = { fg = c.fg, bg = c.selection },
+		TelescopeSelection = { bg = c.selection },
+		TelescopeSelectionCaret = { fg = c.fg },
 		TelescopeResultsComment = { fg = c.fg2 },
 
 		TelescopeMatching = { fg = c.match },
@@ -20,10 +22,10 @@ function M.get(c, opts)
 		TelescopeResultsBorder = { fg = opts.borders and c.bg3 or c.bg2, bg = c.bg2 },
 		TelescopePreviewBorder = { fg = opts.borders and c.bg3 or c.bg2, bg = c.bg2 },
 
-		TelescopeTitle = { fg = c.title, bold = true },
-		TelescopePromptTitle = { fg = c.title, bg = c.bg3 },
-		TelescopeResultsTitle = { fg = c.title, bg = c.bg3 },
-		TelescopePreviewTitle = { fg = c.title, bg = c.bg3 },
+		TelescopeTitle = { fg = c.title },
+		TelescopePromptTitle = { fg = c.title },
+		TelescopeResultsTitle = { fg = c.title },
+		TelescopePreviewTitle = { fg = c.title },
 	}
 end
 

@@ -24,6 +24,7 @@ function M.setup(opts)
 		silver  =       "#A8BEC2", -- members/attributes
 
 		yellow =        "#E3B341", -- UI only: warnings
+		orange =        "#ECA25C",
 		red =           "#FF7A7A", -- UI only: errors, deletions
 	}
 

@@ -6,12 +6,12 @@ M.url = "https://github.com/MagicDuck/grug-far.nvim"
 function M.get(c, opts)
 	return {
 		GrugFarHelpHeader = { fg = c.fg2 },
-		GrugFarHelpHeaderKey = { fg = c.cyan, bold = true },
+		GrugFarHelpHeaderKey = { fg = c.sky, bold = true },
 
-		GrugFarInputLabel = { fg = c.cyan, bold = true },
+		GrugFarInputLabel = { fg = c.sky, bold = true },
 		GrugFarInputPlaceholder = { fg = c.faint },
 
-		GrugFarResultsHeader = { fg = c.violet, bold = true },
+		GrugFarResultsHeader = { fg = c.title },
 		GrugFarResultsStats = { fg = c.info },
 		GrugFarResultsLineNo = { fg = c.faint },
 		GrugFarResultsLineColumn = { fg = c.fg2 },
@@ -28,8 +28,8 @@ function M.get(c, opts)
 		GrugFarStatusSuccess = { fg = c.success },
 		GrugFarStatusError = { fg = c.error },
 
-		GrugFarBufferHeader = { fg = c.cyan, bold = true },
-		GrugFarBufferSpinner = { fg = c.cyan },
+		GrugFarBufferHeader = { fg = c.title },
+		GrugFarBufferSpinner = { fg = c.sky },
 		GrugFarBufferSearchPrefix = { fg = c.fg2 },
 	}
 end

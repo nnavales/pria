@@ -2,34 +2,34 @@ local colors = require("pria.colors").setup()
 
 local pria = {
 	normal = {
-		a = { fg = colors.bg, bg = colors.cyan, gui = "bold" },
+		a = { fg = colors.bg, bg = colors.sky, gui = "bold" },
 		b = { fg = colors.fg, bg = colors.bg2 },
-		c = { fg = colors.faint, bg = colors.bg2 },
+		c = { fg = colors.comment, bg = colors.bg2 },
 	},
 	insert = {
 		a = { fg = colors.bg, bg = colors.green, gui = "bold" },
 		b = { fg = colors.fg, bg = colors.bg2 },
-		c = { fg = colors.faint, bg = colors.bg2 },
+		c = { fg = colors.comment, bg = colors.bg2 },
 	},
 	visual = {
-		a = { fg = colors.bg, bg = colors.orange, gui = "bold" },
+		a = { fg = colors.bg, bg = colors.rose, gui = "bold" },
 		b = { fg = colors.fg, bg = colors.bg2 },
-		c = { fg = colors.faint, bg = colors.bg2 },
+		c = { fg = colors.comment, bg = colors.bg2 },
 	},
 	replace = {
-		a = { fg = colors.bg, bg = colors.violet, gui = "bold" },
+		a = { fg = colors.bg, bg = colors.lilac, gui = "bold" },
 		b = { fg = colors.fg, bg = colors.bg2 },
-		c = { fg = colors.faint, bg = colors.bg2 },
+		c = { fg = colors.comment, bg = colors.bg2 },
 	},
 	command = {
 		a = { fg = colors.bg, bg = colors.blue, gui = "bold" },
 		b = { fg = colors.fg, bg = colors.bg2 },
-		c = { fg = colors.faint, bg = colors.bg2 },
+		c = { fg = colors.comment, bg = colors.bg2 },
 	},
 	terminal = {
-		a = { fg = colors.bg, bg = colors.teal, gui = "bold" },
+		a = { fg = colors.bg, bg = colors.cyan, gui = "bold" },
 		b = { fg = colors.fg, bg = colors.bg2 },
-		c = { fg = colors.faint, bg = colors.bg2 },
+		c = { fg = colors.comment, bg = colors.bg2 },
 	},
 	inactive = {
 		a = { fg = colors.fg2, bg = colors.bg2 },

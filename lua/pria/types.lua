@@ -1,11 +1,12 @@
 ---@class pria.Palette
 ---@field blue string
 ---@field green string
----@field violet string
+---@field lilac string
 ---@field rose string
 ---@field yellow string
+---@field orange string
+---@field sky string
 ---@field cyan string
----@field teal string
 ---@field red string
 ---@field silver string
 ---@field fg2 string
@@ -58,6 +59,7 @@
 ---@field hint string
 ---@field comment string
 ---@field faint string
+---@field structure string
 ---@field selection string
 ---@field search string
 ---@field search_bg string

@@ -66,7 +66,7 @@ function M.get(c, opts)
 		LineNr = { fg = c.faint },
 		LineNrAbove = { fg = c.faint },
 		LineNrBelow = { fg = c.faint },
-		CursorLineNr = { fg = c.fg, bold = true },
+		CursorLineNr = { fg = c.fg, bg = c.bg3 },
 
 		SignColumn = { fg = c.faint, bg = c.none },
 		SignColumnSB = { fg = c.faint, bg = c.none },
@@ -81,11 +81,11 @@ function M.get(c, opts)
 		FloatTitle = { fg = c.title, bg = c.bg3 },
 
 		Pmenu = { bg = c.bg2, fg = c.fg2 },
-		PmenuSel = { fg = c.fg, bg = c.selection },
+		PmenuSel = { fg = c.fg, bg = c.bg3, bold = true },
 		PmenuSbar = { bg = c.bg3 },
 		PmenuThumb = { bg = c.fg2 },
 		PmenuMatch = { bg = c.bg2, fg = c.fg },
-		PmenuMatchSel = { bg = c.selection, fg = c.fg },
+		PmenuMatchSel = { bg = c.bg3, fg = c.fg, bold = true },
 		WildMenu = { bg = c.bg2, fg = c.fg2 },
 
 		StatusLine = { fg = c.fg, bg = c.bg2 },
@@ -96,7 +96,7 @@ function M.get(c, opts)
 		TabLine = { bg = opts.transparent and c.none or c.bg2, fg = c.faint },
 		TabLineFill = { bg = opts.transparent and c.none or c.bg2 },
 		TabLineSel = { fg = c.sky, bg = opts.transparent and c.none or c.bg },
-		Title = { fg = c.title, bold = true },
+		Title = { fg = c.title },
 
 		Search = { bg = c.search_bg, fg = c.fg },
 		IncSearch = { bg = c.search, fg = c.bg, bold = true },
@@ -112,6 +112,10 @@ function M.get(c, opts)
 		DiffDelete = { bg = c.diff.delete, fg = c.git.delete, nocombine = true },
 		DiffText = { bg = c.diff.text },
 		DiffTextAdd = { bg = c.diff.text },
+
+		LuaLineDiffAdd = { fg = c.git.add },
+		LuaLineDiffChange = { fg = c.git.change },
+		LuaLineDiffDelete = { fg = c.git.delete },
 
 		diffAdded = { fg = c.git.add },
 		diffRemoved = { fg = c.git.delete },
@@ -187,9 +191,9 @@ function M.get(c, opts)
 		Changed = { fg = c.git.change },
 		Removed = { fg = c.git.delete },
 		PmenuExtra = { fg = c.fg2, bg = c.bg2 },
-		PmenuExtraSel = { fg = c.silver, bg = c.selection },
+		PmenuExtraSel = { fg = c.silver, bg = c.bg3, bold = true },
 		PmenuKind = { fg = c.sky, bg = c.bg2 },
-		PmenuKindSel = { fg = c.sky, bg = c.selection },
+		PmenuKindSel = { fg = c.sky, bg = c.bg3, bold = true },
 	}
 end
 
