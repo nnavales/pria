@@ -15,7 +15,7 @@ subtext0       = "#8a9698"
 text           = "#D3D9DA"
 accent         = "#A8BEC2"
 
-sidebar_bg     = "#212527"
+sidebar_bg     = "#1C1F21"
 active_row_bg  = "#2A2F32"
 selection_bg   = "#394B5B"
 
@@ -24,7 +24,7 @@ surface0       = "#1C1F21"
 overlay1       = "#8A9698"
 
 surface1       = "#394B5B"
-surface_dim    = "#2A2F32"
+surface_dim    = "#1C1F21"
 
 green          = "#ACEAFE"
 yellow         = "#34DACA"
@@ -33,4 +33,3 @@ red            = "#F7ABD1"
 mauve          = "#a8bec2"
 blue           = "#79BCF6"
 peach          = "#E3B341"
-
