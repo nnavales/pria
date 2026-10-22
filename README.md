@@ -19,14 +19,14 @@ A dark colorscheme for Neovim and the terminal, built around the reflection of l
   lazy = false,
   priority = 1000,
   config = function()
-    require("pria").load()
+    vim.cmd.colorscheme("pria")
   end,
 }
 ```
 
 ### Extended configuration
 
-Call `setup()` before `load()`.
+`setup()` is only needed when you want to change the defaults. Call it before applying the theme.
 
 ```lua
 require("pria").setup({
@@ -46,7 +46,7 @@ require("pria").setup({
   },
 })
 
-require("pria").load()
+vim.cmd.colorscheme("pria")
 ```
 
 Each style accepts attributes such as `bold`, `italic`, and `underline`.
