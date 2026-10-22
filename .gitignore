@@ -4,3 +4,4 @@ lab/
 .tests/langs/*
 AGENTS.md
 *.vsix
+scripts/

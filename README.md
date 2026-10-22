@@ -190,7 +190,7 @@ colorscheme pria
 ### Core palette
 
 | Color    | Hex       | RGB                  | Purpose                                  |
-| ---      | ---       | ---                  | ---                                      |
+| -------- | --------- | -------------------- | ---------------------------------------- |
 | `bg`     | `#212527` | `rgb(33, 37, 39)`    | Main background                          |
 | `bg2`    | `#1C1F21` | `rgb(28, 31, 33)`    | Recessed surfaces: floats and popups     |
 | `bg3`    | `#2A2F32` | `rgb(42, 47, 50)`    | Raised surfaces, separators, and borders |
@@ -208,7 +208,7 @@ colorscheme pria
 <summary>Interface colors</summary>
 
 | Color        | Hex       | RGB                  | Purpose                                                |
-| ---          | ---       | ---                  | ---                                                    |
+| ------------ | --------- | -------------------- | ------------------------------------------------------ |
 | `comment`    | `#798486` | `rgb(121, 132, 134)` | Comments                                               |
 | `faint`      | `#464D4F` | `rgb(70, 77, 79)`    | Line numbers, disabled text, and non-text UI           |
 | `structure`  | `#97ADB1` | `rgb(151, 173, 177)` | Operators, delimiters, and separators                  |
@@ -233,7 +233,7 @@ colorscheme pria
 <summary>Diff, git, and diagnostics</summary>
 
 | Color                | Hex                   | RGB                                      | Purpose                              |
-| ---                  | ---                   | ---                                      | ---                                  |
+| -------------------- | --------------------- | ---------------------------------------- | ------------------------------------ |
 | `git.add`            | `#89E28D`             | `rgb(137, 226, 141)`                     | Added files                          |
 | `git.change`         | `#ACEAFE`             | `rgb(172, 234, 254)`                     | Modified files                       |
 | `git.delete`         | `#FF7A7A`             | `rgb(255, 122, 122)`                     | Deleted files                        |
