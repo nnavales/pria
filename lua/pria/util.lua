@@ -26,8 +26,7 @@ function M.resolve(groups)
 	return groups
 end
 
--- simple string interpolation.
--- example template: "${name} is ${value}"
+-- example: "${name} is ${value}"
 ---@param str string template string
 ---@param table table key value pairs to replace in the string
 function M.template(str, table)
@@ -38,12 +37,9 @@ function M.template(str, table)
 	)
 end
 
--- ---------------------------------------------------------------------------
--- Color helpers (OKLCH / OKLab)
---
--- All helpers take and return "#RRGGBB" hex strings so they can be composed
--- directly on top of palette colors, e.g. `util.lighten(colors.red, 0.15)`.
--- ---------------------------------------------------------------------------
+-- Color helpers (OKLCH / OKLab). All helpers take and return "#RRGGBB" hex
+-- strings so they can be composed directly on top of palette colors, e.g.
+-- `util.lighten(colors.red, 0.15)`.
 
 local atan2 = math.atan2
 	or function(y, x)

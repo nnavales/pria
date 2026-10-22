@@ -35,7 +35,6 @@ function M.setup(colors, opts)
 		treesitter = true,
 	}
 
-	-- autodetect lazy.nvim plugins
 	if package.loaded.lazy then
 		local lazy_plugins = require("lazy.core.config").plugins
 		for plugin, group in pairs(M.plugins) do
@@ -44,13 +43,13 @@ function M.setup(colors, opts)
 			end
 		end
 	else
-		-- no lazy.nvim: load all plugins
+		-- no lazy.nvim: load every plugin group
 		for _, group in pairs(M.plugins) do
 			groups[group] = true
 		end
 	end
 
-	-- ovederride plugings manually
+	-- override plugin groups manually
 	for name, enabled in pairs(opts.plugins) do
 		if type(enabled) == "boolean" then
 			groups[name] = enabled or nil
@@ -58,7 +57,6 @@ function M.setup(colors, opts)
 	end
 
 	local ret = {}
-	-- merge highlights
 	for group in pairs(groups) do
 		for k, v in pairs(M.get(group, colors, opts)) do
 			ret[k] = v
