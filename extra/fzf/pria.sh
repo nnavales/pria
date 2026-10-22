@@ -1,6 +1,6 @@
 export FZF_DEFAULT_OPTS=" \
-  --tmux=82% \
   --ansi \
+  --no-bold \
   --cycle \
   --no-mouse \
   --info=inline-right \
@@ -9,22 +9,30 @@ export FZF_DEFAULT_OPTS=" \
   --prompt='› ' \
   --pointer='>' \
   --marker='*' \
-  --color=bg:#1E2124 \
-  --color=fg:#DCE5E5 \
-  --color=hl:#E4C56B \
-  --color=fg+:#DCE5E5 \
-  --color=bg+:#33383D \
-  --color=hl+:#E4C56B \
-  --color=info:#789AA1 \
-  --color=prompt:#A1DEEA \
-  --color=pointer:#E4C56B \
-  --color=marker:#B895DE \
-  --color=spinner:#A1DEEA \
-  --color=header:#A1DEEA \
-  --color=border:#282B2F \
-  --color=gutter:#1E2124 \
-  --color=query:#DCE5E5:regular \
-  --color=scrollbar:#282B2F \
-  --color=separator:#789AA1 \
+  --color=bg:#1C1F21 \
+  --color=fg:#D3D9DA \
+  --color=hl:#BFBAFA \
+  --color=fg+:#D3D9DA \
+  --color=bg+:#394B5B \
+  --color=hl+:#BFBAFA \
+  --color=info:#8A9698 \
+  --color=prompt:#ACEAFE \
+  --color=pointer:#79BCF6 \
+  --color=marker:#BFBAFA \
+  --color=spinner:#34DACA \
+  --color=header:#ACEAFE \
+  --color=border:#2A2F32 \
+  --color=gutter:#1C1F21 \
+  --color=query:#D3D9DA:regular \
+  --color=scrollbar:#464D4F \
+  --color=separator:#2A2F32 \
+  --color=preview-bg:#1C1F21 \
+  --color=preview-fg:#D3D9DA \
+  --color=preview-border:#2A2F32 \
+  --color=preview-scrollbar:#464D4F \
+  --color=preview-label:#ACEAFE \
+  --color=label:#ACEAFE \
+  --color=ghost:#8A9698 \
+  --color=disabled:#8A9698 \
   --highlight-line \
 "
