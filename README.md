@@ -1,6 +1,6 @@
 ![Pria](assets/pria.png)
 
-A dark colorscheme for Neovim and the terminal, built around the reflection of light on metal.
+Pria is a colorscheme of muted metal and luminous color.
 
 ## Syntax Highlight
 
@@ -247,8 +247,6 @@ colorscheme pria
 | `diagnostic.hint`    | `#C3E2EC` / `#374448` | Hint chip foreground / background    |
 
 </details>
-
-Terminal colors are generated from the same palette.
 
 ## MIT
 
