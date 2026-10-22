@@ -109,7 +109,7 @@ function M.get(c, opts)
 		["@markup.link"] = { fg = c.faint },
 		["@markup.link.label"] = { fg = c.sky },
 		["@markup.link.label.symbol"] = { fg = c.sky },
-		["@markup.link.url"] = { fg = c.rose, underline = true },
+		["@markup.link.url"] = { fg = c.blue, underline = true },
 
 		["@markup.list"] = { fg = c.blue },
 		["@markup.list.markdown"] = { fg = c.blue, bold = true },
@@ -154,12 +154,12 @@ function M.get(c, opts)
 		["@text.strong"] = { bold = true },
 		["@text.title"] = "Title",
 		["@text.underline"] = { underline = true },
-		["@text.uri"] = { fg = c.rose, underline = true },
+		["@text.uri"] = { fg = c.blue, underline = true },
 		["@text.warning"] = { fg = c.warning },
 
 		["@string.special"] = "String",
 		["@string.special.symbol"] = "Identifier",
-		["@string.special.url"] = { fg = c.rose, underline = true },
+		["@string.special.url"] = { fg = c.blue, underline = true },
 		["@float"] = "Number",
 		["@keyword.conditional.ternary"] = "@keyword",
 		["@conceal"] = "Conceal",
