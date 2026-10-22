@@ -2,10 +2,10 @@
   "$schema": "https://opencode.ai/theme.json",
   "base": {
     "categorical": [
+      "blue",
+      "lilac",
       "interactive",
       "accent",
-      "lilac",
-      "blue",
       "green",
       "red"
     ],
@@ -45,7 +45,7 @@
           "base": "#FF7A7A"
         },
         "warning": {
-          "base": "#ACEAFE"
+          "base": "#A8BEC2"
         },
         "success": {
           "base": "#89E28D"
