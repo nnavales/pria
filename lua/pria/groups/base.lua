@@ -58,15 +58,15 @@ function M.get(c, opts)
 		lCursor = { bg = c.fg, fg = c.bg },
 		CursorIM = { bg = c.fg, fg = c.bg },
 		CursorLine = { bg = c.bg3 },
-		CursorLineSign = { bg = c.bg3 },
-		CursorLineFold = { bg = c.bg3 },
+		CursorLineSign = "SignColumn",
+		CursorLineFold = "FoldColumn",
 		CursorColumn = { bg = c.bg3 },
 		ColorColumn = { bg = c.bg3 },
 
 		LineNr = { fg = c.faint },
 		LineNrAbove = { fg = c.faint },
 		LineNrBelow = { fg = c.faint },
-		CursorLineNr = { fg = c.fg, bg = c.bg3 },
+		CursorLineNr = { fg = c.fg },
 
 		SignColumn = { fg = c.faint, bg = c.none },
 		SignColumnSB = { fg = c.faint, bg = c.none },
