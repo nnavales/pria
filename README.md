@@ -189,62 +189,62 @@ colorscheme pria
 
 ### Core palette
 
-| Color    | Hex       | Purpose                                  |
-| -------- | --------- | ---------------------------------------- |
-| `bg`     | `#212527` | Main background                          |
-| `bg2`    | `#1C1F21` | Recessed surfaces: floats and popups     |
-| `bg3`    | `#2A2F32` | Raised surfaces, separators, and borders |
-| `fg`     | `#D3D9DA` | Main text                                |
-| `fg2`    | `#8A9698` | Secondary text                           |
-| `rose`   | `#F7ABD1` | Numbers, booleans, and literals          |
-| `blue`   | `#79BCF6` | Keywords and links                       |
-| `sky`    | `#ACEAFE` | Types and titles                         |
-| `cyan`   | `#34DACA` | Functions and methods                    |
-| `green`  | `#89E28D` | Strings and additions                    |
-| `lilac`  | `#BFBAFA` | Decorators and search                    |
-| `silver` | `#A8BEC2` | Members and attributes                   |
+| Color    | Hex       | RGB                  | Purpose                                  |
+| ---      | ---       | ---                  | ---                                      |
+| `bg`     | `#212527` | `rgb(33, 37, 39)`    | Main background                          |
+| `bg2`    | `#1C1F21` | `rgb(28, 31, 33)`    | Recessed surfaces: floats and popups     |
+| `bg3`    | `#2A2F32` | `rgb(42, 47, 50)`    | Raised surfaces, separators, and borders |
+| `fg`     | `#D3D9DA` | `rgb(211, 217, 218)` | Main text                                |
+| `fg2`    | `#8A9698` | `rgb(138, 150, 152)` | Secondary text                           |
+| `rose`   | `#F7ABD1` | `rgb(247, 171, 209)` | Numbers, booleans, and literals          |
+| `blue`   | `#79BCF6` | `rgb(121, 188, 246)` | Keywords and links                       |
+| `sky`    | `#ACEAFE` | `rgb(172, 234, 254)` | Types and titles                         |
+| `cyan`   | `#34DACA` | `rgb(52, 218, 202)`  | Functions and methods                    |
+| `green`  | `#89E28D` | `rgb(137, 226, 141)` | Strings and additions                    |
+| `lilac`  | `#BFBAFA` | `rgb(191, 186, 250)` | Decorators and search                    |
+| `silver` | `#A8BEC2` | `rgb(168, 190, 194)` | Members and attributes                   |
 
 <details>
 <summary>Interface colors</summary>
 
-| Color        | Hex       | Purpose                                                |
-| ------------ | --------- | ------------------------------------------------------ |
-| `comment`    | `#798486` | Comments                                               |
-| `faint`      | `#464D4F` | Line numbers, disabled text, and non-text UI           |
-| `structure`  | `#97ADB1` | Operators, delimiters, and separators                  |
-| `selection`  | `#394B5B` | Visual selection, picker selection, and LSP references |
-| `search`     | `#BFBAFA` | Search matches                                         |
-| `search_bg`  | `#343740` | Search match background                                |
-| `substitute` | `#BFBAFA` | Substitute highlight                                   |
-| `match`      | `#BFBAFA` | Matching brackets and picker matches                   |
-| `title`      | `#ACEAFE` | Float, picker, and section titles                      |
-| `yellow`     | `#E3B341` | Warnings and special states                            |
-| `orange`     | `#ECA25C` | Icons                                                  |
-| `red`        | `#FF7A7A` | Errors and deletions                                   |
-| `success`    | `#89E28D` | Success messages and health checks                     |
-| `warning`    | `#E3B341` | Warnings                                               |
-| `error`      | `#FF7A7A` | Errors                                                 |
-| `info`       | `#79BCF6` | Informational messages                                 |
-| `hint`       | `#ACEAFE` | Hints and TODOs                                        |
+| Color        | Hex       | RGB                  | Purpose                                                |
+| ---          | ---       | ---                  | ---                                                    |
+| `comment`    | `#798486` | `rgb(121, 132, 134)` | Comments                                               |
+| `faint`      | `#464D4F` | `rgb(70, 77, 79)`    | Line numbers, disabled text, and non-text UI           |
+| `structure`  | `#97ADB1` | `rgb(151, 173, 177)` | Operators, delimiters, and separators                  |
+| `selection`  | `#394B5B` | `rgb(57, 75, 91)`    | Visual selection, picker selection, and LSP references |
+| `search`     | `#BFBAFA` | `rgb(191, 186, 250)` | Search matches                                         |
+| `search_bg`  | `#343740` | `rgb(52, 55, 64)`    | Search match background                                |
+| `substitute` | `#BFBAFA` | `rgb(191, 186, 250)` | Substitute highlight                                   |
+| `match`      | `#BFBAFA` | `rgb(191, 186, 250)` | Matching brackets and picker matches                   |
+| `title`      | `#ACEAFE` | `rgb(172, 234, 254)` | Float, picker, and section titles                      |
+| `yellow`     | `#E3B341` | `rgb(227, 179, 65)`  | Warnings and special states                            |
+| `orange`     | `#ECA25C` | `rgb(236, 162, 92)`  | Icons                                                  |
+| `red`        | `#FF7A7A` | `rgb(255, 122, 122)` | Errors and deletions                                   |
+| `success`    | `#89E28D` | `rgb(137, 226, 141)` | Success messages and health checks                     |
+| `warning`    | `#E3B341` | `rgb(227, 179, 65)`  | Warnings                                               |
+| `error`      | `#FF7A7A` | `rgb(255, 122, 122)` | Errors                                                 |
+| `info`       | `#79BCF6` | `rgb(121, 188, 246)` | Informational messages                                 |
+| `hint`       | `#ACEAFE` | `rgb(172, 234, 254)` | Hints and TODOs                                        |
 
 </details>
 
 <details>
 <summary>Diff, git, and diagnostics</summary>
 
-| Color                | Hex                   | Purpose                              |
-| -------------------- | --------------------- | ------------------------------------ |
-| `git.add`            | `#89E28D`             | Added files                          |
-| `git.change`         | `#ACEAFE`             | Modified files                       |
-| `git.delete`         | `#FF7A7A`             | Deleted files                        |
-| `diff.add`           | `#313F37`             | Added diff lines                     |
-| `diff.change`        | `#2E3A44`             | Changed diff lines                   |
-| `diff.delete`        | `#413334`             | Deleted diff lines                   |
-| `diff.text`          | `#33434F`             | Changed text within a diff           |
-| `diagnostic.error`   | `#E9A8A6` / `#463535` | Error chip foreground / background   |
-| `diagnostic.warning` | `#D8C495` / `#403C30` | Warning chip foreground / background |
-| `diagnostic.info`    | `#A7C7E4` / `#303D48` | Info chip foreground / background    |
-| `diagnostic.hint`    | `#C3E2EC` / `#374448` | Hint chip foreground / background    |
+| Color                | Hex                   | RGB                                      | Purpose                              |
+| ---                  | ---                   | ---                                      | ---                                  |
+| `git.add`            | `#89E28D`             | `rgb(137, 226, 141)`                     | Added files                          |
+| `git.change`         | `#ACEAFE`             | `rgb(172, 234, 254)`                     | Modified files                       |
+| `git.delete`         | `#FF7A7A`             | `rgb(255, 122, 122)`                     | Deleted files                        |
+| `diff.add`           | `#313F37`             | `rgb(49, 63, 55)`                        | Added diff lines                     |
+| `diff.change`        | `#2E3A44`             | `rgb(46, 58, 68)`                        | Changed diff lines                   |
+| `diff.delete`        | `#413334`             | `rgb(65, 51, 52)`                        | Deleted diff lines                   |
+| `diff.text`          | `#33434F`             | `rgb(51, 67, 79)`                        | Changed text within a diff           |
+| `diagnostic.error`   | `#E9A8A6` / `#463535` | `rgb(233, 168, 166)` / `rgb(70, 53, 53)` | Error chip foreground / background   |
+| `diagnostic.warning` | `#D8C495` / `#403C30` | `rgb(216, 196, 149)` / `rgb(64, 60, 48)` | Warning chip foreground / background |
+| `diagnostic.info`    | `#A7C7E4` / `#303D48` | `rgb(167, 199, 228)` / `rgb(48, 61, 72)` | Info chip foreground / background    |
+| `diagnostic.hint`    | `#C3E2EC` / `#374448` | `rgb(195, 226, 236)` / `rgb(55, 68, 72)` | Hint chip foreground / background    |
 
 </details>
 
