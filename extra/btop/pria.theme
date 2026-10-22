@@ -1,50 +1,75 @@
-theme[main_bg]="#181A1C"
-theme[main_fg]="#DCE5E5"
+# Pria btop theme
+# Neutral UI; visualizations use the Pria palette and semantic capacity scales.
 
-theme[title]="#DCE5E5"
+# Main
+theme[main_bg]="#212527"
+theme[main_fg]="#D3D9DA"
+theme[title]="#D3D9DA"
+theme[hi_fg]="#ACEAFE"
 
-theme[hi_fg]="#A1DEEA"
+# Selection and secondary text
+theme[selected_bg]="#394B5B"
+theme[selected_fg]="#D3D9DA"
+theme[inactive_fg]="#464D4F"
+theme[graph_text]="#8A9698"
+theme[proc_misc]="#34DACA"
+theme[meter_bg]="#2A2F32"
 
-theme[selected_bg]="#33383D"
-theme[selected_fg]="#DCE5E5"
+# Structure
+theme[cpu_box]="#464D4F"
+theme[mem_box]="#464D4F"
+theme[net_box]="#464D4F"
+theme[proc_box]="#464D4F"
+theme[div_line]="#2A2F32"
 
-theme[proc_misc]="#E4C56B"
+# Temperature: cyan is cool, blue is warm, rose is critical.
+theme[temp_start]="#34DACA"
+theme[temp_mid]="#79BCF6"
+theme[temp_end]="#F7ABD1"
 
-theme[cpu_box]="#5C6870"
-theme[mem_box]="#5C6870"
-theme[net_box]="#5C6870"
-theme[proc_box]="#5C6870"
+# CPU: neutral until load is high, then rose. Keeps CPU numbers out of blue.
+theme[cpu_start]="#D3D9DA"
+theme[cpu_mid]="#D3D9DA"
+theme[cpu_end]="#F7ABD1"
 
-theme[div_line]="#5C6870"
+# Process list: blue when light, sky when busy, cyan when heavy.
+# btop applies this to name, CPU, memory and thread columns.
+theme[process_start]="#79BCF6"
+theme[process_mid]="#ACEAFE"
+theme[process_end]="#34DACA"
 
-theme[temp_start]="#5FC878"
-theme[temp_mid]="#E4C56B"
-theme[temp_end]="#E66B80"
+# Memory: green is capacity, blue is the middle, rose is pressure.
+theme[free_start]="#F7ABD1"
+theme[free_mid]="#79BCF6"
+theme[free_end]="#89E28D"
 
-theme[cpu_start]="#5FC878"
-theme[cpu_mid]="#E4C56B"
-theme[cpu_end]="#E66B80"
+# btop reuses this gradient for CPU/GPU watts and P-states.
+# Keep it fg so power values read as text, not as a data category.
+theme[cached_start]="#D3D9DA"
+theme[cached_mid]="#D3D9DA"
+theme[cached_end]="#D3D9DA"
 
-theme[free_start]="#5FC878"
-theme[free_mid]="#E4C56B"
-theme[free_end]="#E66B80"
+theme[available_start]="#F7ABD1"
+theme[available_mid]="#79BCF6"
+theme[available_end]="#89E28D"
 
-theme[cached_start]="#5FC878"
-theme[cached_mid]="#E4C56B"
-theme[cached_end]="#E66B80"
+theme[used_start]="#89E28D"
+theme[used_mid]="#79BCF6"
+theme[used_end]="#F7ABD1"
 
-theme[available_start]="#5FC878"
-theme[available_mid]="#E4C56B"
-theme[available_end]="#E66B80"
+# Network: download is cool, upload is warm-violet; clearly distinct.
+theme[download_start]="#79BCF6"
+theme[download_mid]="#ACEAFE"
+theme[download_end]="#34DACA"
 
-theme[used_start]="#5FC878"
-theme[used_mid]="#E4C56B"
-theme[used_end]="#E66B80"
+theme[upload_start]="#BFBAFA"
+theme[upload_mid]="#F7ABD1"
+theme[upload_end]="#F7ABD1"
 
-theme[download_start]="#5FC878"
-theme[download_mid]="#E4C56B"
-theme[download_end]="#E66B80"
-
-theme[upload_start]="#5FC878"
-theme[upload_mid]="#E4C56B"
-theme[upload_end]="#E66B80"
+# Process states
+theme[proc_banner_bg]="#2A2F32"
+theme[proc_banner_fg]="#D3D9DA"
+theme[proc_pause_bg]="#2A2F32"
+theme[proc_follow_bg]="#394B5B"
+theme[followed_bg]="#394B5B"
+theme[followed_fg]="#ACEAFE"
